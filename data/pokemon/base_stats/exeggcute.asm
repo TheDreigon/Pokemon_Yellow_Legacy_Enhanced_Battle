@@ -20,4 +20,5 @@
 	     SUBSTITUTE,   SOFTBOILED,	 MEGA_DRAIN,   DREAM_EATER
 	; end
 
-	db 0 ; padding
+	db BANK(ExeggcutePicFront)
+	assert BANK(ExeggcutePicFront) == BANK(ExeggcutePicBack)

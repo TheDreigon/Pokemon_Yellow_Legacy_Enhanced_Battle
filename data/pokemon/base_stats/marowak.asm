@@ -22,4 +22,5 @@
 	     CUT, 		STRENGTH, 		SWORDS_DANCE
 	; end
 
-	db 0 ; padding
+	db BANK(MarowakPicFront)
+	assert BANK(MarowakPicFront) == BANK(MarowakPicBack)

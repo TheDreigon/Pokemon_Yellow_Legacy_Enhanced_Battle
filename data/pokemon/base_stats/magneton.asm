@@ -20,4 +20,5 @@
 	     SUBSTITUTE,   FLASH,     TRI_ATTACK
 	; end
 
-	db 0 ; padding
+	db BANK(MagnetonPicFront)
+	assert BANK(MagnetonPicFront) == BANK(MagnetonPicBack)

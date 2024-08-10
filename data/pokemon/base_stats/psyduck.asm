@@ -21,4 +21,5 @@
 	     SKULL_BASH,   REST, PSYCHIC_M, PSYWAVE,  SUBSTITUTE,  SURF, STRENGTH	   
 	; end
 
-	db 0 ; padding
+	db BANK(PsyduckPicFront)
+	assert BANK(PsyduckPicFront) == BANK(PsyduckPicBack)

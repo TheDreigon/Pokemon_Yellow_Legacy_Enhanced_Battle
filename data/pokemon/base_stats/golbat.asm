@@ -19,4 +19,5 @@
 	     BIDE,         SWIFT,        REST,         SUBSTITUTE,   FLY
 	; end
 
-	db 0 ; padding
+	db BANK(GolbatPicFront)
+	assert BANK(GolbatPicFront) == BANK(GolbatPicBack)

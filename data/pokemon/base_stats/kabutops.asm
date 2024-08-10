@@ -21,4 +21,5 @@
 	     REST,         SUBSTITUTE,   CUT,      SURF,  ROCK_SLIDE
 	; end
 
-	db 0 ; padding
+	db BANK(KabutopsPicFront)
+	assert BANK(KabutopsPicFront) == BANK(KabutopsPicBack)
