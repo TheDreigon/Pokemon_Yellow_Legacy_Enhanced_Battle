@@ -126,12 +126,12 @@ PoliwagPicFront::     INCBIN "gfx/pokemon/front/poliwag.pic"
 PoliwagPicBack::      INCBIN "gfx/pokemon/back/poliwagb.pic"
 JynxPicFront::        INCBIN "gfx/pokemon/front/jynx.pic"
 JynxPicBack::         INCBIN "gfx/pokemon/back/jynxb.pic"
-MoltresPicFront::     INCBIN "gfx/pokemon/front/moltres.pic"
-MoltresPicBack::      INCBIN "gfx/pokemon/back/moltresb.pic"
 
 
 SECTION "Pics 3", ROMX
 
+MoltresPicFront::     INCBIN "gfx/pokemon/front/moltres.pic"
+MoltresPicBack::      INCBIN "gfx/pokemon/back/moltresb.pic"
 ArticunoPicFront::    INCBIN "gfx/pokemon/front/articuno.pic"
 ArticunoPicBack::     INCBIN "gfx/pokemon/back/articunob.pic"
 ZapdosPicFront::      INCBIN "gfx/pokemon/front/zapdos.pic"
@@ -198,12 +198,12 @@ WeedlePicFront::      INCBIN "gfx/pokemon/front/weedle.pic"
 WeedlePicBack::       INCBIN "gfx/pokemon/back/weedleb.pic"
 KakunaPicFront::      INCBIN "gfx/pokemon/front/kakuna.pic"
 KakunaPicBack::       INCBIN "gfx/pokemon/back/kakunab.pic"
-BeedrillPicFront::    INCBIN "gfx/pokemon/front/beedrill.pic"
-BeedrillPicBack::     INCBIN "gfx/pokemon/back/beedrillb.pic"
 
 
 SECTION "Pics 4", ROMX
 
+BeedrillPicFront::    INCBIN "gfx/pokemon/front/beedrill.pic"
+BeedrillPicBack::     INCBIN "gfx/pokemon/back/beedrillb.pic"
 DodrioPicFront::       INCBIN "gfx/pokemon/front/dodrio.pic"
 DodrioPicBack::        INCBIN "gfx/pokemon/back/dodriob.pic"
 PrimeapePicFront::     INCBIN "gfx/pokemon/front/primeape.pic"
@@ -260,12 +260,12 @@ PidgeottoPicFront::    INCBIN "gfx/pokemon/front/pidgeotto.pic"
 PidgeottoPicBack::     INCBIN "gfx/pokemon/back/pidgeottob.pic"
 PidgeotPicFront::      INCBIN "gfx/pokemon/front/pidgeot.pic"
 PidgeotPicBack::       INCBIN "gfx/pokemon/back/pidgeotb.pic"
-StarmiePicFront::      INCBIN "gfx/pokemon/front/starmie.pic"
-StarmiePicBack::       INCBIN "gfx/pokemon/back/starmieb.pic"
 
 
 SECTION "Pics 5", ROMX
 
+StarmiePicFront::      INCBIN "gfx/pokemon/front/starmie.pic"
+StarmiePicBack::       INCBIN "gfx/pokemon/back/starmieb.pic"
 BulbasaurPicFront::    INCBIN "gfx/pokemon/front/bulbasaur.pic"
 BulbasaurPicBack::     INCBIN "gfx/pokemon/back/bulbasaurb.pic"
 VenusaurPicFront::     INCBIN "gfx/pokemon/front/venusaur.pic"
