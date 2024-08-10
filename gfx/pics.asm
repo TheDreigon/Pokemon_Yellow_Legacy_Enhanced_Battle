@@ -376,6 +376,7 @@ PKMNTrainerFPic::  INCBIN "gfx/trainers/kris.pic"
 
 
 SECTION "Trainer Pics 3", ROMX
+
 JaninePic::        INCBIN "gfx/trainers/janine.pic"
 JoyPic::           INCBIN "gfx/trainers/joy.pic"
 JennyPic::         INCBIN "gfx/trainers/jenny.pic"
@@ -383,12 +384,8 @@ JennyPic::         INCBIN "gfx/trainers/jenny.pic"
 
 SECTION "Pics 7", ROMX
 
-RedPicBack::       INCBIN "gfx/player/redb.pic"
-GreenPicBack::     INCBIN "gfx/player/greenb.pic"
-OldManPicBack::    INCBIN "gfx/battle/oldmanb.pic"
-ProfOakPicBack::   INCBIN "gfx/battle/prof.oakb.pic"
-
-SECTION "Pics 8", ROMX
-FossilKabutopsPic::    INCBIN "gfx/pokemon/front/fossilkabutops.pic"
-FossilAerodactylPic::  INCBIN "gfx/pokemon/front/fossilaerodactyl.pic"
+RedPicBack::           INCBIN "gfx/player/redb.pic"
+GreenPicBack::         INCBIN "gfx/player/greenb.pic"
+OldManPicBack::        INCBIN "gfx/battle/oldmanb.pic"
+ProfOakPicBack::       INCBIN "gfx/battle/prof.oakb.pic"
 GhostPic::             INCBIN "gfx/battle/ghost.pic"
