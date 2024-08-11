@@ -272,6 +272,7 @@ SECTION "Move Names", ROMX
 
 INCLUDE "data/moves/names.asm"
 
+
 SECTION "Item Descriptions", ROMX
 
 INCLUDE "data/text/item_descriptions.asm"

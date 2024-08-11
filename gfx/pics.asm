@@ -198,12 +198,12 @@ WeedlePicFront::      INCBIN "gfx/pokemon/front/weedle.pic"
 WeedlePicBack::       INCBIN "gfx/pokemon/back/weedleb.pic"
 KakunaPicFront::      INCBIN "gfx/pokemon/front/kakuna.pic"
 KakunaPicBack::       INCBIN "gfx/pokemon/back/kakunab.pic"
+BeedrillPicFront::    INCBIN "gfx/pokemon/front/beedrill.pic"
+BeedrillPicBack::     INCBIN "gfx/pokemon/back/beedrillb.pic"
 
 
 SECTION "Pics 4", ROMX
 
-BeedrillPicFront::    INCBIN "gfx/pokemon/front/beedrill.pic"
-BeedrillPicBack::     INCBIN "gfx/pokemon/back/beedrillb.pic"
 DodrioPicFront::       INCBIN "gfx/pokemon/front/dodrio.pic"
 DodrioPicBack::        INCBIN "gfx/pokemon/back/dodriob.pic"
 PrimeapePicFront::     INCBIN "gfx/pokemon/front/primeape.pic"
