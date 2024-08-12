@@ -1,6 +1,6 @@
 	object_const_def
+	const_export ROUTE2_RARE_CANDY
 	const_export ROUTE2_MOON_STONE
-	const_export ROUTE2_HP_UP
 
 Route2_Object:
 	db $f ; border block
@@ -19,7 +19,6 @@ Route2_Object:
 	bg_event 13, 11, TEXT_ROUTE2_DIGLETTS_CAVE_SIGN
 
 	def_object_events
-	object_event 19,  7, SPRITE_POKE_BALL, STAY, NONE, TEXT_ROUTE2_HP_UP, HP_UP
 	object_event 17, 58, SPRITE_POKE_BALL, STAY, NONE, TEXT_ROUTE2_RARE_CANDY, RARE_CANDY
 	object_event 18, 57, SPRITE_POKE_BALL, STAY, NONE, TEXT_ROUTE2_MOON_STONE, MOON_STONE
 
