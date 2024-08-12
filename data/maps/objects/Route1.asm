@@ -14,7 +14,7 @@ Route1_Object:
 	def_object_events
 	object_event 17,  8, SPRITE_YOUNGSTER, WALK, UP_DOWN, 1
 	object_event 11, 11, SPRITE_YOUNGSTER, WALK, LEFT_RIGHT, 2
-	object_event 11, 25, SPRITE_OAK, STAY, RIGHT, 3, OPP_PROF_OAK, 1 ; oak
+	object_event 10, 27, SPRITE_OAK, STAY, RIGHT, 3, OPP_PROF_OAK, 1 ; oak
 
 	def_warps_to ROUTE_1
 
