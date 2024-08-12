@@ -224,7 +224,7 @@ CeruleanCity_TextPointers:
 	dw_const CeruleanCityCooltrainerF1Text, TEXT_CERULEANCITY_COOLTRAINER_F1
 	dw_const CeruleanCityElectrodeText,     TEXT_CERULEANCITY_ELECTRODE
 	dw_const CeruleanCityCooltrainerF2Text, TEXT_CERULEANCITY_COOLTRAINER_F2
-	dw_const CeruleanCitySuperNerd3Text,    TEXT_CERULEANCITY_SUPER_NERD3
+	dw_const CeruleanCityHikerGuardText,    TEXT_CERULEANCITY_HIKER_GUARD
 	dw_const CeruleanCityGuardText,         TEXT_CERULEANCITY_GUARD2
 	dw_const CeruleanCitySignText,          TEXT_CERULEANCITY_SIGN
 	dw_const CeruleanCityTrainerTipsText,   TEXT_CERULEANCITY_TRAINER_TIPS
@@ -420,8 +420,8 @@ CeruleanCityCooltrainerF2Text:
 	text_far _CeruleanCityCooltrainerF2Text
 	text_end
 
-CeruleanCitySuperNerd3Text:
-	text_far _CeruleanCitySuperNerd3Text
+CeruleanCityHikerGuardText:
+	text_far _CeruleanCityHikerGuardText
 	text_end
 
 CeruleanCitySignText:

@@ -107,12 +107,12 @@ _CeruleanCityCooltrainerMText::
 	done
 
 _CeruleanCitySuperNerd1Text::
-	text "That bush in"
+	text "This bush in"
 	line "front of the shop"
 	cont "is in the way."
 
 	para "There might be a"
-	line "way around."
+	line "way around..."
 	done
 
 _CeruleanCitySuperNerd2Text::
@@ -191,7 +191,7 @@ _CeruleanCityCooltrainerF2Text::
 	cont "get dirty!"
 	done
 
-_CeruleanCitySuperNerd3Text::
+_CeruleanCityHikerGuardText::
 	text "This is CERULEAN"
 	line "CAVE! Horribly"
 	cont "strong #MON"
