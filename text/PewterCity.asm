@@ -46,20 +46,21 @@ _PewterCitySuperNerd1ItsRightHereText::
 	done
 
 _PewterCitySuperNerd2DoYouKnowWhatImDoingText::
-	text "Psssst!"
+	text "Hey!"
 	line "Do you know what"
 	cont "I'm doing?"
 	done
 
 _PewterCitySuperNerd2ThatsRightText::
 	text "That's right!"
-	line "It's hard work!"
+	line "It's a beautiful"
+	cont "garden!"
 	done
 
 _PewterCitySuperNerd2ImSprayingRepelText::
-	text "I'm spraying REPEL"
-	line "to keep #MON"
-	cont "out of my garden!"
+	text "I'm looking"
+	line "at my beautiful"
+	cont "garden!"
 	done
 
 _PewterCityYoungsterYoureATrainerFollowMeText::
