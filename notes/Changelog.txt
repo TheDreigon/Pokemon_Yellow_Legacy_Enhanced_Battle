@@ -1083,6 +1083,7 @@ Fazer as alterações do código em 4 passos: __UPDATE: ia cum caneco, consigo m
 		adicionar os novos moves a moves/names.asm ___TODO
 		adaptar esses novos moves nos outros files ___TODO
 		melhorar o animations.asm, tendo cuidado com o espaço ___TODO
+		TMs: lista deles e seus locais de encontro ___TODO
 		
 	5 - ir a cada pokemon e adaptar consoante: 
 		os novos moves ___TODO _-_-_-_-
