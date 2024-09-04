@@ -50,7 +50,6 @@ TypeEffects:
 	db POISON,       ROCK,         NOT_VERY_EFFECTIVE
 	db POISON,       GHOST,        NOT_VERY_EFFECTIVE
 	db POISON,       PSYCHIC_TYPE, NOT_VERY_EFFECTIVE
-	db POISON,       NORMAL,       SUPER_EFFECTIVE
 	db POISON,       ICE,          NOT_VERY_EFFECTIVE
 	db POISON,       FIGHTING,     NOT_VERY_EFFECTIVE
 	db GROUND,       FIRE,         SUPER_EFFECTIVE
@@ -90,4 +89,78 @@ TypeEffects:
 	db ICE,          FIRE,         NOT_VERY_EFFECTIVE
 	db ICE,          FIGHTING,     NOT_VERY_EFFECTIVE
 	db DRAGON,       DRAGON,       SUPER_EFFECTIVE
+
+	; Steel
+    db STEEL,        ICE,          SUPER_EFFECTIVE
+    db STEEL,        ROCK,         SUPER_EFFECTIVE
+    db STEEL,        DRAGON,       SUPER_EFFECTIVE
+    db STEEL,        FAIRY,        SUPER_EFFECTIVE
+    db STEEL,        FIRE,         NOT_VERY_EFFECTIVE
+    db STEEL,        WATER,        NOT_VERY_EFFECTIVE
+    db STEEL,        ELECTRIC,     NOT_VERY_EFFECTIVE
+    db STEEL,        STEEL,        NOT_VERY_EFFECTIVE
+    db FIRE,         STEEL,        SUPER_EFFECTIVE
+    db FIGHTING,     STEEL,        SUPER_EFFECTIVE
+    db GROUND,       STEEL,        SUPER_EFFECTIVE
+    db NORMAL,       STEEL,        NOT_VERY_EFFECTIVE
+    db GRASS,        STEEL,        NOT_VERY_EFFECTIVE
+    db ICE,          STEEL,        NOT_VERY_EFFECTIVE
+    db FLYING,       STEEL,        NOT_VERY_EFFECTIVE
+    db BUG,          STEEL,        NOT_VERY_EFFECTIVE
+    db ROCK,         STEEL,        NOT_VERY_EFFECTIVE
+    db DRAGON,       STEEL,        NOT_VERY_EFFECTIVE
+    db FAIRY,        STEEL,        NOT_VERY_EFFECTIVE
+    db POISON,       STEEL,        NO_EFFECT
+
+    ; Dark
+    db DARK,         PSYCHIC_TYPE, SUPER_EFFECTIVE
+    db DARK,         GHOST,        SUPER_EFFECTIVE
+    db DARK,         NORMAL,       SUPER_EFFECTIVE
+    db DARK,         FIGHTING,     NOT_VERY_EFFECTIVE
+    db DARK,         DARK,         NOT_VERY_EFFECTIVE
+    db DARK,         FAIRY,        NOT_VERY_EFFECTIVE
+    db DARK,         BUG,          NOT_VERY_EFFECTIVE
+    db FIGHTING,     DARK,         SUPER_EFFECTIVE
+    db BUG,          DARK,         SUPER_EFFECTIVE
+    db FAIRY,        DARK,         SUPER_EFFECTIVE
+    db GHOST,        DARK,         NOT_VERY_EFFECTIVE
+    db DARK,         DARK,         NOT_VERY_EFFECTIVE
+    db PSYCHIC_TYPE, DARK,         NO_EFFECT
+
+    ; Fairy
+    db FAIRY,        FIGHTING,     SUPER_EFFECTIVE
+    db FAIRY,        DRAGON,       SUPER_EFFECTIVE
+    db FAIRY,        DARK,         SUPER_EFFECTIVE
+    db FAIRY,        FIRE,         NOT_VERY_EFFECTIVE
+    db FAIRY,        POISON,       NOT_VERY_EFFECTIVE
+    db FAIRY,        STEEL,        NOT_VERY_EFFECTIVE
+    db POISON,       FAIRY,        SUPER_EFFECTIVE
+    db STEEL,        FAIRY,        SUPER_EFFECTIVE
+    db GAS,          FAIRY,        SUPER_EFFECTIVE
+    db FIGHTING,     FAIRY,        NOT_VERY_EFFECTIVE
+    db BUG,          FAIRY,        NOT_VERY_EFFECTIVE
+    db DARK,         FAIRY,        NOT_VERY_EFFECTIVE
+    db GRASS,        FAIRY,        NOT_VERY_EFFECTIVE
+    db DRAGON,       FAIRY,        NO_EFFECT
+
+    ; Gas (new type)
+    db GAS,          GRASS,        SUPER_EFFECTIVE
+    ;db GAS,          FAIRY,        SUPER_EFFECTIVE
+    db GAS,          BUG,          SUPER_EFFECTIVE
+    db GAS,          GHOST,        NOT_VERY_EFFECTIVE
+    db GAS,          POISON,       NOT_VERY_EFFECTIVE
+    db GAS,          GAS,          NOT_VERY_EFFECTIVE
+    db FIRE,         GAS,          SUPER_EFFECTIVE
+    db ICE,          GAS,          SUPER_EFFECTIVE
+    db ELECTRIC,     GAS,          SUPER_EFFECTIVE
+    db FLYING,       GAS,          SUPER_EFFECTIVE
+    db GRASS,        GAS,          NOT_VERY_EFFECTIVE
+    db BUG,          GAS,          NOT_VERY_EFFECTIVE
+    db POISON,       GAS,          NOT_VERY_EFFECTIVE
+    db NORMAL,       GAS,          NOT_VERY_EFFECTIVE
+    db GHOST,        GAS,          NOT_VERY_EFFECTIVE
+    db FIGHTING,     GAS,          NOT_VERY_EFFECTIVE
+    db GAS,          GAS,          NOT_VERY_EFFECTIVE
+    db GROUND,       GAS,          NO_EFFECT
+
 	db -1 ; end

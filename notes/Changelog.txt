@@ -427,7 +427,7 @@ Bug: Super-Effective against Poison -> Not Very Effective against Poison (aligns
 Bug: Regularly Effective against Rock -> Not Very Effective against Rock. ___DONE _
 Bug: Not Very Effective against Ghost -> Regularly Effective against Ghost. ___DONE _
 
-Poison: Regularly Effective against Normal -> Super-Effective against Normal. ___DONE _ -- -- -- -- -- -- Edit: reverter isto; poison normal vs normal (balance).
+;Poison: Regularly Effective against Normal -> Super-Effective against Normal. ___DONE _ -- -- -- -- -- -- Edit: reverter isto; deixar poison normal vs normal (balance).
 Poison: Regularly Effective against Psychic -> Not Very Effective against Psychic. ___DONE _
 Poison: Regularly Effective against Ice -> Not Very Effective against Ice. ___DONE _
 Poison: Regularly Effective against Fighting -> Not Very Effective against Fighting. ___DONE _
@@ -470,14 +470,14 @@ Steel - revised:
 Dark - original: 
 	strong VS Psychic, Ghost; 
 	not strong VS Fighting, Dark, Steel; 
-	weak TO Fighting, Bug; 
+	weak TO Fighting, Bug, Fairy; 
 	resists Ghost, Dark;
 	Immune TO Psychic.
 	
 Dark - revised: 
 	strong VS Psychic, Ghost, Normal; 
 	not strong VS Fighting, Dark, Fairy, Bug; 
-	weak TO Fighting, Bug; 
+	weak TO Fighting, Bug, Fairy; 
 	resists Ghost, Dark;
 	Immune TO Psychic.
 	
@@ -501,7 +501,7 @@ Gas - new:
 	strong VS Grass, Fairy, Bug; 
 	not strong VS Ghost, Poison, Gas; 
 	weak TO Fire, Ice, Eletric, Flying; 
-	resists Grass, Fairy, Bug, Poison, Normal, Ghost, Gas; 
+	resists Grass, Bug, Poison, Normal, Ghost, Fighting, Gas; 
 	Immune TO Ground.
 
 ____________________ - - - - - - - - - - 
@@ -816,7 +816,7 @@ revised : 45 90 180 90 45 - 460
 
 Jynx
 original: 65 50 35 95  95  - 340
-revised : 70 60 45 115 100 - 390
+revised : 65 55 45 115 100 - 380
 
 Lapras
 original: 130 85 80 95 60 - 450
