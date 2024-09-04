@@ -492,7 +492,7 @@ Fairy - original:
 Fairy - revised: 
 	strong VS Fighting, Dragon, Dark; 
 	not strong VS Fire, Poison, Steel; 
-	weak TO Poison, Steel, Gas; 
+	weak TO Poison, Steel, Gas, Fire; 
 	resists Fighting, Bug, Dark, Grass;
 	Immune TO Dragon.
 	
