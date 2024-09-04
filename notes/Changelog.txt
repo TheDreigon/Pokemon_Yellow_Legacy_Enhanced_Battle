@@ -393,7 +393,6 @@ Farfetch'd: Normal/Flying -> Fighting/Flying
 Seel: Water -> Water/Ice (Dewgong already is Water/Ice)
 Gyarados: Water/Flying -> Water/Dragon
 Porygon: Normal -> Electric/Normal
-Vulpix/Ninetales: Fire -> Fire/Fairy
 Kangaskhan: Normal -> Normal/Fighting
 Seadra: Water -> Water/Dragon
 Grimer/Muk: Poison -> Poison/Water
@@ -410,11 +409,12 @@ Drowzee/Hypno: Psychic -> Psychic/Dark
 Mankey/Primeape: Fighting -> Fighting/Dark
 Gastly/Haunter: Ghost/Poison - Ghost/Gas
 Gengar: Ghost/Poison - Ghost/Dark
+Vulpix/Ninetales: Fire -> Fire/Fairy
 Jigglypuff/Wigglytuff: Normal -> Fairy/Normal
 Clefairy/Clefable: Normal -> Fairy
 Mr. Mime: Psychic -> Psychic/Fairy
 Chansey: Normal -> Fairy/Normal
-Koffing/Weezing: Poison -> Poison/Gas
+Koffing/Weezing: Poison -> Poison/Gas (Gas: new typing, immune to Ground)
 
 - - - - - - - - - - 
 
@@ -427,7 +427,6 @@ Bug: Super-Effective against Poison -> Not Very Effective against Poison (aligns
 Bug: Regularly Effective against Rock -> Not Very Effective against Rock. ___DONE _
 Bug: Not Very Effective against Ghost -> Regularly Effective against Ghost. ___DONE _
 
-;Poison: Regularly Effective against Normal -> Super-Effective against Normal. ___DONE _ -- -- -- -- -- -- Edit: reverter isto; deixar poison normal vs normal (balance).
 Poison: Regularly Effective against Psychic -> Not Very Effective against Psychic. ___DONE _
 Poison: Regularly Effective against Ice -> Not Very Effective against Ice. ___DONE _
 Poison: Regularly Effective against Fighting -> Not Very Effective against Fighting. ___DONE _
@@ -450,7 +449,6 @@ Fire: Regularly Effective against Ground -> Not Very Effective against Ground. _
 
 Rock: Super-Effective against Fire -> Regularly Effective against Fire. ___DONE _
 
-- - - - - - - - - - 
 
 Steel - original: 
 	strong VS Ice, Rock; 
@@ -519,8 +517,8 @@ Nidoran: level 16 -> level 18
 Nidorino/Nidorina: moonstone -> level 34
 Jigglypuff: moonstone -> level 24
 Zubat: level 22 -> level 21
-Paras: level 24 -> level 23
-Venonat: level 31 -> level 15
+Paras: level 24 -> level 19
+Venonat: level 31 -> level 17
 Diglett: level 28 -> level 33
 Psyduck: level 33 -> level 25
 Mankey: level 28 -> level 29
@@ -553,17 +551,13 @@ Dragonair: level 55 -> level 45
 Omanyte: level 40 -> level 30
 Kabuto: level 40 -> level 30
 
-____________________
-
 Evolution stones reminder and update:
 
 - Moonstone: (4) Clefairy, Jigglypuff, Nidorino, Nidorina -> (3) Clefairy, Vulpix, Staryu
 - Waterstone: (4) Eevee, Poliwhirl, Shellder, Staryu -> (3) Eevee, Poliwhirl, Shellder
-- Leafstone: (3) Gloom, Weepinbell, Exeggcute -> (3) Gloom, Weepinbell, Exeggcute
+- Leafstone: (3) Gloom, Weepinbell, Exeggcute -> (2) Gloom, Weepinbell
 - Thunderstone: (2) Eevee, Pikachu -> (2) Eevee, Pikachu
 - Firestone: (3) Eevee, Vulpix, Growlithe -> (2) Eevee, Growlithe
-
--> se eu um dia fizer refactor das pedras, quero ter os seguintes pokes a evoluir por nivel: gloom, weepinbell, growlithe.
 
 ____________________
 
@@ -743,19 +737,22 @@ Grass: - - - - - - - - - - - - - -
 Vileplume
 original: 75  80 85 100 50 - 390
 smith   : 90  80 85 100 50 - 405
-revised : 100 95 90 105 50 - 440
+revised : 105 95 90 105 50 - 445
+* Gloom also +10Hp (60 to 70), +10Attack (65 to 75).
 
 Victreebell
 original: 80 105 65 100 70 - 420
-revised : 80 110 60 100 90 - 440
+revised : 80 110 60 100 95 - 445
+* Weepinbell -10Attack (90 to 80), +10Speed (55 to 65).
 
 Exeggutor
 original: 95 95 85 125 55 - 455
-revised : 90 85 85 120 60 - 440
+revised : 90 80 85 120 60 - 435
+* Exeggcute -15Defense (80 to 65), +20Special (60 to 80), +5Speed (40 to 45).
 
 Tangela
 original: 65 55 115 100 60 - 395
-revised : 95 75 105 85  60 - 420
+revised : 95 75 105 85  65 - 425
 
 
 Electric: - - - - - - - - - - - - - -
@@ -846,15 +843,15 @@ original: 105 105 75 65 50 - 400
 smith   : 105 105 75 85 50 - 420
 revised : 150 100 70 90 30 - 440
 robo    : 140 95  80 85 30 - 430
-revised2: 150 95  75 90 40 - 450
-* Grimer also +30Hp (80 to 110), -20Attack (80 to 60), +20 Special (40 to 60).
+revised2: 145 95  75 90 40 - 445
+* Grimer also +25Hp (80 to 105), -20Attack (80 to 60), +20 Special (40 to 60).
 
 Weezing
 original: 65  90 120 85  60 - 420
 revised : 120 90 100 100 50 - 460
 robo    : 115 85 95  100 35 - 430
-revised2: 110 90 100 95  55 - 450
-* Koffing also +40Hp (40 to 80), -15Defense (95 to 80), +20Special (60 to 80), -5Speed (35 to 30).
+revised2: 105 90 100 95  55 - 445
+* Koffing also +35Hp (40 to 75), -15Defense (95 to 80), +20Special (60 to 80), -5Speed (35 to 30).
 
 Gengar
 original: 60 65 60 130 110 - 425
@@ -952,11 +949,11 @@ revised : 95 60 95 90 85 - 425
 
 Gyarados
 original: 95  125 79 100 81 - 480
-revised : 100 130 80 95  80 - 485
+revised : 95  130 80 95  80 - 480
 
 Dragonite
-original: 91 134  95 100 80 - 500
-revised : 120 130 85 100 80 - 515
+original: 91  134 95 100 80 - 500
+revised : 110 125 85 100 80 - 500
 
 
 Psychic: - - - - - - - - - - - - - -
