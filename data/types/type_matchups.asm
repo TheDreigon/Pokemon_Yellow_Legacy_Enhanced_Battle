@@ -110,6 +110,7 @@ TypeEffects:
 	db DRAGON,       STEEL,        NOT_VERY_EFFECTIVE
 	db FAIRY,        STEEL,        NOT_VERY_EFFECTIVE
 	db POISON,       STEEL,        NO_EFFECT
+	db GAS,          STEEL,        NO_EFFECT
 	; Dark
 	db DARK,         PSYCHIC_TYPE, SUPER_EFFECTIVE
 	db DARK,         GHOST,        SUPER_EFFECTIVE
