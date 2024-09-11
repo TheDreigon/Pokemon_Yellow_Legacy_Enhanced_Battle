@@ -5,6 +5,7 @@ REVISED movelist organized by type and damge - includes new moves:
 
 Normal (19 movimentos)
     move SUPERSONIC,   CONFUSION_EFFECT,             0, NORMAL,        80, 20
+	
 	move POUND,        NO_ADDITIONAL_EFFECT,        30, NORMAL,       100, 35
     move SCRATCH,      NO_ADDITIONAL_EFFECT,        35, NORMAL,       100, 35
     move TACKLE,       NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 30
@@ -28,6 +29,7 @@ Normal (19 movimentos)
 
 Fighting (13 movimentos)
     move COUNTER,      ACCURACY_UP1_EFFECT,          1, FIGHTING,     100, 20
+	
     move SEISMIC_TOSS, SPECIAL_DAMAGE_EFFECT,        1, FIGHTING,     100, 25
     move DOUBLE_KICK,  ATTACK_TWICE_EFFECT,         30, FIGHTING,     100, 20
     move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  18, FIGHTING,      90, 20
@@ -73,6 +75,7 @@ Ice (5 movimentos)
 
 Electric (7 movimentos)
     move THUNDER_WAVE, PARALYZE_EFFECT,              0, ELECTRIC,     100, 20
+	
     move SWIFT,        PARALYZE_SIDE_EFFECT1,       40, ELECTRIC,     100, 30
     move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,       55, ELECTRIC,     100, 25
     move THUNDERSHOCK, PARALYZE_SIDE_EFFECT1,       70, ELECTRIC,     100, 20
@@ -116,10 +119,11 @@ Dragon (5 movimentos)
 
 
 Grass (13 movimentos)
+    move POISONPOWDER, POISON_EFFECT,                0, GRASS,         90, 20
+    move STUN_SPORE,   PARALYZE_EFFECT,              0, GRASS,         80, 20
     move SLEEP_POWDER, SLEEP_EFFECT,                 0, GRASS,         70, 20
-    move STUN_SPORE,   PARALYZE_EFFECT,              0, GRASS,         75, 20
-    move POISONPOWDER, POISON_EFFECT,                0, GRASS,         80, 20
     move LEECH_SEED,   LEECH_SEED_EFFECT,            0, GRASS,        100, 15
+	
     move ABSORB,       DRAIN_HP_EFFECT,             20, GRASS,        100, 30
     move VINE_WHIP,    NO_ADDITIONAL_EFFECT,        40, GRASS,        100, 30
     move WRAP,         TRAPPING_EFFECT,             16, GRASS,         85, 20
@@ -134,6 +138,7 @@ Grass (13 movimentos)
 
 Ground (7 movimentos)
     move SAND_ATTACK,  ACCURACY_DOWN1_EFFECT,       20, GROUND,       100, 20
+	
     move GROUND_STOMP, SPEED_DOWN_SIDE_EFFECT,      40, GROUND,       100, 30
     move DIG,          CHARGE_EFFECT,               75, GROUND,       100, 20
     move EARTHQUAKE,   SPEED_DOWN_SIDE_EFFECT,      90, GROUND,       100, 15
@@ -145,20 +150,23 @@ Ground (7 movimentos)
 
 Ghost (3 movimentos)
     move CONFUSE_RAY,  CONFUSION_EFFECT,             0, GHOST,        100, 20
+	
     move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,        100, 25
     move SHADOW_BALL,  SPECIAL_DOWN_SIDE_EFFECT,    80, GHOST,        100, 20
 
 
 Dark (4 movimentos)
     move GLARE,        PARALYZE_EFFECT,              0, DARK,          90, 20
+	
     move LICK,         PARALYZE_SIDE_EFFECT2,       30, DARK,         100, 30
     move DARK_PULSE,   FLINCH_SIDE_EFFECT2,         80, DARK,         100, 20
 
     move LOVELY_KISS,  SLEEP_EFFECT,                 0, DARK,          80, 20  -- signature move
 
 
-Poison (5 movimentos)
+Poison (4 movimentos)
     move TOXIC,        POISON_EFFECT,                0, POISON,       100, 20
+	
     move POISON_STING, POISON_SIDE_EFFECT1,         35, POISON,       100, 30
     move ACID,         DEFENSE_DOWN1_EFFECT,        50, POISON,       100, 25
     move SLUDGE,       POISON_SIDE_EFFECT2,         65, POISON,       100, 20
@@ -176,6 +184,7 @@ Water (6 movimentos)
 
 Psychic (5 movimentos)
     move HYPNOSIS,     SLEEP_EFFECT,                 0, PSYCHIC_TYPE,  70, 20
+	
     move PSYWAVE,      SPECIAL_DAMAGE_EFFECT,       40, PSYCHIC_TYPE, 100, 30
     move CONFUSION,    CONFUSION_SIDE_EFFECT,       55, PSYCHIC_TYPE, 100, 25
     move PSYCHIC_M,    SPECIAL_DOWN_SIDE_EFFECT,    90, PSYCHIC_TYPE, 100, 15
@@ -183,8 +192,9 @@ Psychic (5 movimentos)
     move DREAM_EATER,  DREAM_EATER_EFFECT,         100, PSYCHIC_TYPE, 100, 20  -- signature move
 
 
-Gas (2 movimentos)
+Gas (3 movimentos)
     move POISON_GAS,   POISON_EFFECT,                0, GAS,           80, 20
+	
     move SMOG,         POISON_SIDE_EFFECT1,         40, GAS,          100, 30
     move HAZE,         POISON_SIDE_EFFECT2,         90, GAS,          100, 15
 	
@@ -254,7 +264,7 @@ Contagem de Movimentos Pokémon por Tipo:
 	Normal: 19 movimentos
 	Fighting: 13 movimentos
 	Flying: 7 movimentos
-	Poison: 5 movimentos
+	Poison: 4 movimentos
 	Ground: 7 movimentos
 	Rock: 6 movimentos
 	Bug: 8 movimentos
@@ -268,7 +278,7 @@ Contagem de Movimentos Pokémon por Tipo:
 	Dragon: 5 movimentos
 	Dark: 4 movimentos
 	Steel: 1 movimento
-	Gas: 2 movimentos
+	Gas: 3 movimentos
 	Bird: 45 movimentos
 Total: 166 movimentos
 	
