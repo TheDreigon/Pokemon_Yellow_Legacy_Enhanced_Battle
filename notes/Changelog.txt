@@ -4,6 +4,7 @@ REVISED movelist organized by type and damge - includes new moves:
 
 
 Normal (19 movimentos)
+    move SUPERSONIC,   CONFUSION_EFFECT,             0, NORMAL,        80, 20
 	move POUND,        NO_ADDITIONAL_EFFECT,        30, NORMAL,       100, 35
     move SCRATCH,      NO_ADDITIONAL_EFFECT,        35, NORMAL,       100, 35
     move TACKLE,       NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 30
@@ -18,8 +19,8 @@ Normal (19 movimentos)
     move HYPER_FANG,   NO_ADDITIONAL_EFFECT,        75, NORMAL,       100, 25
     move BODY_SLAM,    NO_ADDITIONAL_EFFECT,        80, NORMAL,       100, 25
     move DOUBLE_EDGE,  RECOIL_EFFECT,              100, NORMAL,       100, 10
-    move SELFDESTRUCT, EXPLODE_EFFECT,             125, FIRE,         100,  5
 
+	move SING,         SLEEP_EFFECT,                 0, NORMAL,        80, 20  -- signature move
     move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,        1, NORMAL,       100, 20  -- signature move
     move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 20  -- signature move
     move PAY_DAY,      PAY_DAY_EFFECT,              60, NORMAL,       100, 30  -- signature move
@@ -45,9 +46,9 @@ Fighting (13 movimentos)
 Flying (7 movimentos)
     move PECK,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 35
 	move GUST,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 35
-    move WING_ATTACK,  NO_ADDITIONAL_EFFECT,        60, FLYING,       100, 30
+    move WING_ATTACK,  NO_ADDITIONAL_EFFECT,        50, FLYING,       100, 30
     move AIR_SLASH,    NO_ADDITIONAL_EFFECT,        65, FLYING,       100, 30
-    move FLY,          FLY_EFFECT,                  70, FLYING,       100, 20
+    move FLY,          FLY_EFFECT,                  75, FLYING,       100, 20
     move DRILL_PECK,   DEFENSE_DOWN1_EFFECT,        90, FLYING,       100, 15
     move SKY_ATTACK,   FLY_EFFECT,                 110, FLYING,       100, 10
 	
@@ -58,6 +59,8 @@ Fire (6 movimentos)
     move FIRE_SPIN,    BURN_SIDE_EFFECT1,           70, FIRE,         100, 20
     move FLAMETHROWER, BURN_SIDE_EFFECT2,           90, FIRE,         100, 15
     move FIRE_BLAST,   BURN_SIDE_EFFECT2,          110, FIRE,          80, 10
+    
+	move SELFDESTRUCT, EXPLODE_EFFECT,             125, FIRE,         100,  5  -- signature move
 
 
 Ice (5 movimentos)
@@ -132,7 +135,7 @@ Grass (13 movimentos)
 Ground (7 movimentos)
     move SAND_ATTACK,  ACCURACY_DOWN1_EFFECT,       20, GROUND,       100, 20
     move GROUND_STOMP, SPEED_DOWN_SIDE_EFFECT,      40, GROUND,       100, 30
-    move DIG,          CHARGE_EFFECT,               70, GROUND,       100, 20
+    move DIG,          CHARGE_EFFECT,               75, GROUND,       100, 20
     move EARTHQUAKE,   SPEED_DOWN_SIDE_EFFECT,      90, GROUND,       100, 15
     move FISSURE,      SPEED_DOWN1_EFFECT,         120, GROUND,        80,  5
 
@@ -147,10 +150,11 @@ Ghost (3 movimentos)
 
 
 Dark (4 movimentos)
-    move LOVELY_KISS,  SLEEP_EFFECT,                 0, DARK,          75, 20
     move GLARE,        PARALYZE_EFFECT,              0, DARK,          90, 20
     move LICK,         PARALYZE_SIDE_EFFECT2,       30, DARK,         100, 30
     move DARK_PULSE,   FLINCH_SIDE_EFFECT2,         80, DARK,         100, 20
+
+    move LOVELY_KISS,  SLEEP_EFFECT,                 0, DARK,          80, 20  -- signature move
 
 
 Poison (5 movimentos)
@@ -186,54 +190,56 @@ Gas (2 movimentos)
 	
 	
 Bird (45 movimentos)
-    move SING,         SLEEP_EFFECT,                 0, BIRD,          75, 20
-    move SUPERSONIC,   CONFUSION_EFFECT,             0, BIRD,          80, 20
-    
-	move BIDE,         BIDE_EFFECT,                  0, BIRD,         100, 20
-    move REST,         HEAL_EFFECT,                  0, BIRD,         100, 30
-    move RECOVER,      HEAL_EFFECT,                  0, BIRD,         100, 15
-    move DISABLE,      DISABLE_EFFECT,               0, BIRD,          75, 15
-    move LIGHT_SCREEN, LIGHT_SCREEN_EFFECT,          0, BIRD,         100, 20
-    move REFLECT,      REFLECT_EFFECT,               0, BIRD,         100, 20
-	
     move GROWL,        ATTACK_DOWN1_EFFECT,          0, BIRD,         100, 30
     move TAIL_WHIP,    DEFENSE_DOWN1_EFFECT,         0, BIRD,         100, 30
-    move CONFUSE,      SPECIAL_DOWN1_EFFECT,         0, BIRD,         100, 30
+    move CONFUSE,      SPECIAL_DOWN1_EFFECT,         0, BIRD,         100, 25
     move LEER,         SPEED_DOWN1_EFFECT,           0, BIRD,         100, 30
+    move STRING_SHOT,  SPEED_DOWN1_EFFECT,           0, BIRD,         100, 30
+    move WHIRLWIND,    SPEED_DOWN1_EFFECT,           0, BIRD,         100, 30
     move SMOKESCREEN,  ACCURACY_DOWN1_EFFECT,        0, BIRD,         100, 20
 	
+	move X_X_X_X_X_X,  ATTACK_DOWN2_EFFECT,          0, BIRD,         100, 20  -- new move ('Charm')
     move SCREECH,      DEFENSE_DOWN2_EFFECT,         0, BIRD,         100, 20
+	move X_X_X_X_X_X,  SPECIAL_DOWN2_EFFECT,         0, BIRD,         100, 20  -- new move ('Fake Tears')
+	move X_X_X_X_X_X,  SPEED_DOWN2_EFFECT,           0, BIRD,         100, 20  -- new move ('Scary Face')
     move FLASH,        ACCURACY_DOWN2_EFFECT,        0, BIRD,         100, 20
 	
-    move FOCUS_ENERGY, ATTACK_UP1_EFFECT,            0, BIRD,         100, 30
     move ROAR,         ATTACK_UP1_EFFECT,            0, BIRD,         100, 30
     move HARDEN,       DEFENSE_UP1_EFFECT,           0, BIRD,         100, 30
     move DEFENSE_CURL, DEFENSE_UP1_EFFECT,           0, BIRD,         100, 30
+    move WITHDRAW,     DEFENSE_UP1_EFFECT,           0, BIRD,         100, 30
     move GROWTH,       SPECIAL_UP1_EFFECT,           0, BIRD,         100, 25
-    move MEDITATE,     SPECIAL_UP1_EFFECT,           0, BIRD,         100, 25
+    move MEDITATE,     SPECIAL_UP1_EFFECT,           0, BIRD,         100, 25  -- rename to 'Calm Mind'
+    move X_X_X_X_X_X,  SPECIAL_UP1_EFFECT,           0, BIRD,         100, 25  -- new move ('Nasty Plot')
+    move X_X_X_X_X_X,  SPEED_UP1_EFFECT,             0, BIRD,         100, 30  -- new move ('Nimble')
+    move X_X_X_X_X_X,  SPEED_UP1_EFFECT,             0, BIRD,         100, 30  -- new move ('Rock Polish')
     move DOUBLE_TEAM,  EVASION_UP1_EFFECT,           0, BIRD,         100, 15
     move MINIMIZE,     EVASION_UP1_EFFECT,           0, BIRD,         100, 15
     move TELEPORT,     EVASION_UP1_EFFECT,           0, BIRD,         100, 15
 	
 	move SWORDS_DANCE, ATTACK_UP2_EFFECT,            0, BIRD,         100, 20
+    move ACID_ARMOR,   DEFENSE_UP2_EFFECT,           0, BIRD,         100, 20
+	move X_X_X_X_X_X,  DEFENSE_UP2_EFFECT,           0, BIRD,         100, 20  -- new move ('Iron Defense')
     move AMNESIA,      SPECIAL_UP2_EFFECT,           0, BIRD,         100, 15
     move AGILITY,      SPEED_UP2_EFFECT,             0, BIRD,         100, 20
+    move X_X_X_X_X_X,  ACCURACY_UP2_EFFECT,          0, BIRD,         100, 20  -- new move ('Lock On')
 	
-    move WITHDRAW,     DEFENSE_UP1_EFFECT,           0, BIRD,         100, 30
-    move ACID_ARMOR,   DEFENSE_UP2_EFFECT,           0, BIRD,         100, 20
-    move STRING_SHOT,  SPEED_DOWN1_EFFECT,           0, BIRD,         100, 30
-    move WHIRLWIND,    SPEED_DOWN1_EFFECT,           0, BIRD,         100, 30
-	
+    move FOCUS_ENERGY, FOCUS_ENERGY_EFFECT,          0, BIRD,         100, 30
+    move SHARPEN,      ATTACK_UP2_EFFECT,            0, BIRD,         100, 20
+    move CONVERSION,   SPECIAL_UP2_EFFECT,           0, BIRD,         100, 15
+    move LIGHT_SCREEN, LIGHT_SCREEN_EFFECT,          0, BIRD,         100, 20
+    move REFLECT,      REFLECT_EFFECT,               0, BIRD,         100, 20
+	move BIDE,         BIDE_EFFECT,                  0, BIRD,         100, 20
+    move DISABLE,      DISABLE_EFFECT,               0, BIRD,          75, 15
     move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, BIRD,         100, 10
     move MIRROR_MOVE,  MIRROR_MOVE_EFFECT,           0, BIRD,         100, 20
     move MIMIC,        MIMIC_EFFECT,                 0, BIRD,         100, 20
     move METRONOME,    METRONOME_EFFECT,             0, BIRD,         100, 20
-	
-    move SPLASH,       SPLASH_EFFECT,                0, BIRD,         100, 40
-    move SHARPEN,      ATTACK_UP2_EFFECT,            0, BIRD,         100, 20
-    move CONVERSION,   SPECIAL_UP2_EFFECT,           0, BIRD,         100, 15
     move TRANSFORM,    TRANSFORM_EFFECT,             0, BIRD,         100, 40
+    move REST,         HEAL_EFFECT,                  0, BIRD,         100, 30
+    move RECOVER,      HEAL_EFFECT,                  0, BIRD,         100, 15
     move SOFTBOILED,   HEAL_EFFECT,                  0, BIRD,         100, 20
+    move SPLASH,       SPLASH_EFFECT,                0, BIRD,         100, 40
 	
     move STRUGGLE,     RECOIL_EFFECT,               40, BIRD,         100, 10
 	
@@ -734,7 +740,7 @@ revised : 95 90 150 70 50 - 455
 Golem
 original: 80 110 130 55 45 - 420
 revised : 90 110 135 60 70 - 465
-* Graveler also +10Hp (55 to 65), +10Speed (35 to 45).
+* Graveler also +15Hp (55 to 70), +15Speed (35 to 50).
 
 Rhydon
 original: 105 130 120 45 40 - 440
@@ -832,7 +838,7 @@ Grass: - - - - - - - - - - - - - -
 Vileplume
 original: 75  80 85 100 50 - 390
 smith   : 90  80 85 100 50 - 405
-revised : 105 95 85 105 50 - 440
+revised : 100 95 85 105 50 - 435
 * Gloom also +10Hp (60 to 70), +10Attack (65 to 75).
 
 Victreebell
@@ -842,8 +848,8 @@ revised : 80 110 70 100 80 - 440
 
 Exeggutor
 original: 95 95 85 125 55 - 455
-revised : 90 75 85 120 60 - 430
-* Exeggcute -15Defense (80 to 65), +20Special (60 to 80), +5Speed (40 to 45).
+revised : 90 75 85 120 55 - 425
+* Exeggcute -35Defense (80 to 45), +20Special (60 to 80).
 
 Tangela
 original: 65 55 115 100 60 - 395
@@ -1044,8 +1050,8 @@ revised : 90 60 95 90 85 - 420
 * Horsea also +15HP (30 to 45), -5Special (70 to 65), +10Speed (60 to 70).
 
 Gyarados
-original: 95  125 79 100 81 - 480
-revised : 95  130 85 90  80 - 480
+original: 95 125 79 100 81 - 480
+revised : 95 130 85 90  80 - 480
 
 Dragonite
 original: 91  134 95 100 80 - 500
