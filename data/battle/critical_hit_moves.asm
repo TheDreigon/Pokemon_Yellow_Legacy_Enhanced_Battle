@@ -1,4 +1,5 @@
 HighCriticalMoves:
+	db PAY_DAY
 	db GUILLOTINE
 	db AIR_SLASH
 	db CUT
@@ -6,4 +7,5 @@ HighCriticalMoves:
 	db HORN_DRILL
 	db RAZOR_LEAF
 	db SLASH
+	db LEEK_STRIKE
 	db -1 ; end
