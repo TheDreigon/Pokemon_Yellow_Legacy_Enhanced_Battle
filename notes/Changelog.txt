@@ -33,20 +33,20 @@ Normal (20 moves)  __FIRST REVISION DONE
     move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 20  -- signature move
 
 
-Fighting (13 moves)  __FIRST REVISION DONE
+Fighting (14 moves)  __FIRST REVISION DONE
     move SEISMIC_TOSS, SPECIAL_DAMAGE_EFFECT,        1, FIGHTING,     100, 25
     move DOUBLE_KICK,  ATTACK_TWICE_EFFECT,         30, FIGHTING,     100, 20
     move LOW_KICK,     FLINCH_SIDE_EFFECT2,         45, FIGHTING,      90, 25
     move MACH_PUNCH,   NO_ADDITIONAL_EFFECT,        45, FIGHTING,     100, 20  -- new move (priority move)
     move STRENGTH,     ATTACK_UP1_EFFECT,           60, FIGHTING,     100, 30
-    move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        75, FIGHTING,      90, 20
+    move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        70, FIGHTING,      90, 25
+    move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, FIGHTING,     100, 20
     move TAKE_DOWN,    DEFENSE_DOWN1_EFFECT,        80, FIGHTING,      95, 20
 
     move ROLLING_KICK, FLINCH_SIDE_EFFECT2,         75, FIGHTING,     100, 25  -- signature move
     move HI_JUMP_KICK, NO_ADDITIONAL_EFFECT,       100, FIGHTING,      90, 20  -- signature move
     move DIZZY_PUNCH,  CONFUSION_SIDE_EFFECT,       75, FIGHTING,     100, 25  -- signature move
-    move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, FIGHTING,     100, 20  -- signature move
-    move LEEK_STRIKE,  NO_ADDITIONAL_EFFECT,        55, FIGHTING,     100, 30  -- signature move  -- new move
+    move LEEK_STRIKE,  NO_ADDITIONAL_EFFECT,        55, FIGHTING,     100, 30  -- new signature move
     move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        60, FIGHTING,     100, 30  -- signature move
     move SUBMISSION,   ATTACK_DOWN1_EFFECT,         90, FIGHTING,     100, 20  -- signature move
 	
@@ -91,11 +91,12 @@ Electric (8 moves)  __FIRST REVISION DONE
     move TRI_ATTACK,   ACCURACY_UP1_EFFECT,         90, ELECTRIC,     100, 20  -- signature move
 
 
-Bug (9 moves)  __FIRST REVISION DONE
+Bug (10 moves)  __FIRST REVISION DONE
     move CONSTRICT,    SPEED_DOWN1_EFFECT,          30, BUG,          100, 30
     move BUG_BITE,     FLINCH_SIDE_EFFECT1,         40, BUG,          100, 30
     move LEECH_LIFE,   DRAIN_HP_EFFECT,             65, BUG,          100, 15
-	move BUG_BUZZ,     SPECIAL_DOWN_SIDE_EFFECT,    90, BUG,          100, 15  -- new move
+	move BUG_BUZZ,     NO_ADDITIONAL_EFFECT,        90, BUG,          100, 15  -- new move
+	move MEGAHORN,     NO_ADDITIONAL_EFFECT,        90, BUG,          100, 15  -- new move
 
     move SPORE,        SLEEP_EFFECT,                 0, BUG,          100, 20  -- signature move
     move VICEGRIP,     PARALYZE_SIDE_EFFECT1,       75, BUG,          100, 25  -- signature move
@@ -109,10 +110,10 @@ Rock (7 moves)  __FIRST REVISION DONE
     move ROCK_THROW,   FLINCH_SIDE_EFFECT2,         65, ROCK,          90, 25
     move ROCK_SLIDE,   PARALYZE_SIDE_EFFECT2,       90, ROCK,         100, 15
     move SKULL_BASH,   RECOIL_EFFECT,              100, ROCK,         100, 10
-	move HORN_DRILL,   DEFENSE_DOWN1_EFFECT,       120, ROCK,          80,  5
 
     move ROLLOUT,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, ROCK,          90, 20  -- new signature move
     move CRABHAMMER,   FLINCH_SIDE_EFFECT2,         90, ROCK,          90, 20  -- signature move
+	move HORN_DRILL,   DEFENSE_DOWN1_EFFECT,       120, ROCK,          80,  5  -- signature move
 
 
 Steel (4 moves)  __FIRST REVISION DONE
@@ -129,6 +130,42 @@ Dragon (6 moves)  __FIRST REVISION DONE
     move DRAGON_SLAM,  PARALYZE_SIDE_EFFECT2,       90, DRAGON,       100, 15
     move THRASH,       THRASH_PETAL_DANCE_EFFECT,  100, DRAGON,       100, 10
     move HYPER_BEAM,   HYPER_BEAM_EFFECT,          130, DRAGON,        80,  5
+	
+	
+Water (6 moves)  __FIRST REVISION DONE
+    move WATER_GUN,    NO_ADDITIONAL_EFFECT,        40, WATER,        100, 30
+    move BUBBLEBEAM,   CONFUSION_SIDE_EFFECT,       55, WATER,        100, 25
+    move WATERFALL,    FLINCH_SIDE_EFFECT1,         70, WATER,        100, 20
+    move SURF,         SPEED_DOWN_SIDE_EFFECT,      90, WATER,        100, 15
+    move HYDRO_PUMP,   FLINCH_SIDE_EFFECT2,        110, WATER,         80, 10
+
+    move CLAMP,        TRAPPING_EFFECT,             18, WATER,         85, 20  -- signature move
+
+
+Psychic (6 moves)
+    move HYPNOSIS,     SLEEP_EFFECT,                 0, PSYCHIC_TYPE,  70, 20
+	
+    move PSYWAVE,      CONFUSION_SIDE_EFFECT,       30, PSYCHIC_TYPE, 100, 30
+    move CONFUSION,    CONFUSION_SIDE_EFFECT,       50, PSYCHIC_TYPE, 100, 25
+	move PSYBEAM,      SPECIAL_DOWN_SIDE_EFFECT,    70, PSYCHIC_TYPE, 100, 20
+    move PSYCHIC_M,    SPECIAL_DOWN1_EFFECT,        90, PSYCHIC_TYPE, 100, 15
+    move DREAM_EATER,  DREAM_EATER_EFFECT,         100, PSYCHIC_TYPE, 100, 20
+	
+
+Ghost (3 moves)
+    move CONFUSE_RAY,  CONFUSION_EFFECT,             0, GHOST,        100, 20
+	
+    move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,        100, 25
+    move SHADOW_BALL,  ACCURACY_DOWN1_EFFECT,       80, GHOST,        100, 15
+
+
+Dark (4 moves)
+    move GLARE,        PARALYZE_EFFECT,              0, DARK,          90, 20
+	
+    move LICK,         PARALYZE_SIDE_EFFECT2,       30, DARK,         100, 30
+    move DARK_PULSE,   FLINCH_SIDE_EFFECT2,         80, DARK,         100, 15
+
+    move LOVELY_KISS,  SLEEP_EFFECT,                 0, DARK,          80, 20  -- signature move
 
 
 Grass (13 moves)
@@ -160,22 +197,6 @@ Ground (7 moves)
     move BONEMERANG,   ATTACK_TWICE_EFFECT,         40, GROUND,       100, 20  -- signature move
 
 
-Ghost (3 moves)
-    move CONFUSE_RAY,  CONFUSION_EFFECT,             0, GHOST,        100, 20
-	
-    move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,        100, 25
-    move SHADOW_BALL,  SPECIAL_DOWN_SIDE_EFFECT,    80, GHOST,        100, 20
-
-
-Dark (4 moves)
-    move GLARE,        PARALYZE_EFFECT,              0, DARK,          90, 20
-	
-    move LICK,         PARALYZE_SIDE_EFFECT2,       30, DARK,         100, 30
-    move DARK_PULSE,   FLINCH_SIDE_EFFECT2,         80, DARK,         100, 20
-
-    move LOVELY_KISS,  SLEEP_EFFECT,                 0, DARK,          80, 20  -- signature move
-
-
 Poison (4 moves)
     move TOXIC,        POISON_EFFECT,                0, POISON,       100, 20
 	
@@ -184,30 +205,10 @@ Poison (4 moves)
     move SLUDGE,       POISON_SIDE_EFFECT2,         65, POISON,       100, 20
 
 
-Water (6 moves)
-    move WATER_GUN,    NO_ADDITIONAL_EFFECT,        40, WATER,        100, 30
-    move BUBBLEBEAM,   SPEED_DOWN_SIDE_EFFECT,      55, WATER,        100, 25
-    move WATERFALL,    FLINCH_SIDE_EFFECT1,         70, WATER,        100, 20
-    move SURF,         SPEED_DOWN_SIDE_EFFECT,      90, WATER,        100, 15
-    move HYDRO_PUMP,   SPEED_DOWN1_EFFECT,         110, WATER,         80, 10
-
-    move CLAMP,        TRAPPING_EFFECT,             18, WATER,         85, 20  -- signature move
-
-
-Psychic (5 moves)
-    move HYPNOSIS,     SLEEP_EFFECT,                 0, PSYCHIC_TYPE,  70, 20
-	
-    move PSYWAVE,      SPECIAL_DAMAGE_EFFECT,       40, PSYCHIC_TYPE, 100, 30
-    move CONFUSION,    CONFUSION_SIDE_EFFECT,       55, PSYCHIC_TYPE, 100, 25
-    move PSYCHIC_M,    SPECIAL_DOWN_SIDE_EFFECT,    90, PSYCHIC_TYPE, 100, 15
-	
-    move DREAM_EATER,  DREAM_EATER_EFFECT,         100, PSYCHIC_TYPE, 100, 20  -- signature move
-
-
 Gas (3 moves)
-    move POISON_GAS,   POISON_EFFECT,                0, GAS,           80, 20
+    move POISON_GAS,   POISON_EFFECT,                0, GAS,           80, 20  -- maybe redundant move?
 	
-    move SMOG,         POISON_SIDE_EFFECT1,         40, GAS,          100, 30
+    move SMOG,         POISON_SIDE_EFFECT1,         35, GAS,          100, 30
     move HAZE,         POISON_SIDE_EFFECT2,         90, GAS,          100, 15
 	
 	
@@ -274,25 +275,25 @@ Moves to remove:
 
 Moves count per type:
 	Normal: 20 moves
-	Fighting: 13 moves
+	Fighting: 14 moves
 	Flying: 6 moves
 	Poison: 4 moves
 	Ground: 7 moves
 	Rock: 7 moves
-	Bug: 9 moves
+	Bug: 10 moves
 	Ghost: 3 moves
 	Fire: 6 moves
 	Water: 6 moves
 	Grass: 13 moves
 	Electric: 8 moves
-	Psychic: 5 moves
+	Psychic: 6 moves
 	Ice: 5 moves
 	Dragon: 6 moves
 	Dark: 4 moves
 	Steel: 4 moves
 	Gas: 3 moves
 	Bird: 47 moves
-Total: 176 moves (originally 166)
+Total: 179 moves (originally 166)
 
 ____________________ - - - - - - - - - - 
 
@@ -664,7 +665,7 @@ Grimer: level 38 -> level 31
 Drowzee: level 26 -> level 30
 Krabby: level 28 -> level 30 (good rod)
 Exeggcute: leafstone -> level 33
-Cubone: level 28 -> level 30
+Cubone: level 28 -> level 25 (pô-lo a ser apanhado a um nível mais baixo. por exemplo, na rota 4, à saída do Mt. Moon)
 Koffing: level 35 -> level 31
 Rhyhorn: level 42 -> level 40
 Horsea: level 35 -> level 30 (good rod)
@@ -678,7 +679,7 @@ Evolution stones reminder and update:
 
 - Moonstone: (4) Clefairy, Jigglypuff, Nidorino, Nidorina -> (3) Clefairy, Vulpix, Staryu
 - Waterstone: (4) Eevee, Poliwhirl, Shellder, Staryu -> (3) Eevee, Poliwhirl, Shellder
-- Leafstone: (3) Gloom, Weepinbell, Exeggcute -> (2) Gloom, Weepinbell
+- Leafstone: (3) Gloom, Weepinbell, Exeggcute -> (3) Gloom, Weepinbell, Exeggcute
 - Thunderstone: (2) Eevee, Pikachu -> (2) Eevee, Pikachu
 - Firestone: (3) Eevee, Vulpix, Growlithe -> (2) Eevee, Growlithe
 
@@ -816,14 +817,14 @@ Normal: - - - - - - - - - - - - - -
 Clefable
 original: 95  70 73 85  60 - 383
 smith   : 95  70 73 95  60 - 393
-revised : 100 70 80 105 70 - 425
+revised : 100 70 80 110 70 - 430
 * Clefairy also +15Special (60 to 75), +10Speed (35 to 45).
 
 Wigglytuff
 original: 140 70 45 50 45 - 350
 smith   : 140 70 55 85 45 - 395
 revised : 140 75 50 70 75 - 410
-* Jigglypuff also -5Hp (115 to 110), +5Attack (45 to 50), +10Defense (20 to 30), +15Special (25 to 40), +25Speed (20 to 45).
+* Jigglypuff also -5Hp (115 to 110), +10Defense (20 to 30), +15Special (25 to 40), +30Speed (20 to 50).
 
 Raticate
 original: 55 81 60 50 97  - 343
@@ -843,8 +844,8 @@ original: 75 100 95 70 110 - 450
 revised : 80 120 75 55 110 - 440
 
 Kangaskhan
-original: 105 95 80 40 90 - 410
-revised : 110 100 80 55 80 - 425
+original: 105 95  80 40 90 - 410
+revised : 105 100 80 55 80 - 420
 
 Chansey
 original: 250 5  5  105 50 - 415
@@ -869,8 +870,8 @@ revised : 100 95 85 105 50 - 435
 
 Victreebell
 original: 80 105 65 100 70 - 420
-revised : 80 110 70 100 80 - 440
-* Weepinbell -10Attack (90 to 80), +10Speed (55 to 65).
+revised : 80 110 65 100 80 - 435
+* Weepinbell -5Attack (90 to 85), +10Speed (55 to 65).
 
 Exeggutor
 original: 95 95 85 125 55 - 455
@@ -983,7 +984,7 @@ revised2: 105 90 105 100 50 - 450
 
 Gengar
 original: 60 65 60 130 110 - 425
-revised : 55 85 70 125 115 - 450
+revised : 60 85 60 125 115 - 445
 * Haunter also +5Attack (50 to 55).
 
 
@@ -1062,7 +1063,7 @@ revised : 80 95 65 85 80 - 410
 
 Starmie
 original: 60 75 85 100 115 - 435
-revised : 60 75 80 105 110 - 430
+revised : 60 70 80 105 110 - 425
 
 Gyarados
 original: 95 125 79 100 81 - 480
@@ -1073,7 +1074,7 @@ Dragon: - - - - - - - - - - - - - -
 
 Seadra
 original: 55 65 95 95 85 - 395
-revised : 90 60 95 90 85 - 420
+revised : 90 60 90 90 90 - 420
 * Horsea also +15HP (30 to 45), -5Special (70 to 65), +10Speed (60 to 70).
 
 Gyarados
@@ -1093,11 +1094,12 @@ revised : 60 50 45 135 125 - 415
 
 Hypno
 original: 85 73 70 115 67 - 410
-revised : 80 85 80 115 70 - 430
+revised : 80 85 75 110 75 - 425
 
 Mr Mime
 original: 40 45 65 100 90  - 340
 revised : 50 55 60 105 105 - 375
+revised2: 50 45 80 105 100 - 380
 
 
 Legendary: - - - - - - - - - - - - - -
@@ -1241,25 +1243,15 @@ ____________________ - - - - - - - - - -
 
 Possible pokemon to add:
 
+- Steelix
 - Kingdra (evolve with waterstone)
 - Tangrowth (evolve with leafstone)
 - Crobat (evolve level 37) (ou melhor: "Poison Stone" - pedra nova que também se aplica aos Nidos)
 - eeveelutions
 - heracross
 - porygon2
-- Steelix
 
 - Electivire and Magmortar
 
 ____________________ - - - - - - - - - - 
-
-AIR_SLASH - replaced Razor_Wind
-DRAGON_SLAM - replaced Slam
-GROUND_STOMP - replaced Stomp
-SHADOW_BALL - replaced Mega_Kick
-DARK_PULSE - replaced Jump_Kick
-ICY_MIST - replaced Mist
-CONFUSE - replaced Kinesis
-BUG_BITE - replaced Bubble
-
 
