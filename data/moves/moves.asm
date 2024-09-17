@@ -24,7 +24,7 @@ Moves:
     move SCRATCH,      NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 30 ; pokemon learns either Scratch, Bite, or Tackle.
     move VICEGRIP,     PARALYZE_SIDE_EFFECT1,       75, BUG,          100, 25 ; replaced 'NO_ADDITIONAL_EFFECT' with 'PARALYZE_SIDE_EFFECT1'. pinsir, kingler.
     move GUILLOTINE,   DEFENSE_DOWN1_EFFECT,       120, BUG,           80,  5 ; replaced 'OHKO_EFFECT' with 'DEFENSE_DOWN1_EFFECT'. passou a ser high-crit.
-    move AIR_SLASH,    NO_ADDITIONAL_EFFECT,        65, FLYING,       100, 30 ; NEW MOVE - replaced Razor_Wind. high-crit. TODO: remove - replace with another new, after all.
+    move LEEK_STRIKE,  NO_ADDITIONAL_EFFECT,        55, FIGHTING,     100, 30 ; NEW MOVE - replaced Razor_Wind. Farfetch'd signature. high crit.
     move SWORDS_DANCE, ATTACK_UP2_EFFECT,            0, BIRD,         100, 20 ; Natural: arcanine, dragonite, farfetch'd, primeape, scyther, persian. Learn: marowak, pinsir, kabutops, sandslash, kingler, hitmons, nidoking (high level), farfetch'd (high level).
     move CUT,          NO_ADDITIONAL_EFFECT,        60, STEEL,        100, 25 ; passou a ser high-crit.
     move GUST,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 35 ; pokemon learns either peck or gust.
@@ -45,11 +45,11 @@ Moves:
     move FURY_ATTACK,  TWO_TO_FIVE_ATTACKS_EFFECT,  17, NORMAL,        90, 20
     move HORN_DRILL,   DEFENSE_DOWN1_EFFECT,       120, ROCK,          80,  5 ; replaced 'OHKO_EFFECT' with 'DEFENSE_DOWN1_EFFECT'. passou a ser high-crit. pokemon learns eith horn drill or skull bash. Rhydon, Tauros (high level).
     move TACKLE,       NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 30 ; pokemon learns either Scratch, Bite, or Tackle.
-    move BODY_SLAM,    PARALYZE_SIDE_EFFECT2,       80, NORMAL,       100, 20
+    move BODY_SLAM,    PARALYZE_SIDE_EFFECT2,       80, NORMAL,       100, 20 ; tauros, gyarados, snorlax, marowak, primeape, pinsir, seaking, kangaskhan, electrode, rhydon, arcanine, onyx, etc.
     move WRAP,         TRAPPING_EFFECT,             16, GRASS,         85, 30 ; animação ligeiramente mais lenta/demorada. Tangela, Victreebel, Tentacruel.
     move TAKE_DOWN,    DEFENSE_DOWN1_EFFECT,        80, FIGHTING,      95, 20 ; replaced 'RECOIL_EFFECT' with 'DEFENSE_DOWN1_EFFECT'. versao ligeiramente mais fraca e comum do Submission.
     move THRASH,       THRASH_PETAL_DANCE_EFFECT,  100, DRAGON,       100, 10 ; gyarados, dragonite, tauros, marowak, primeape, rhydon, onyx, nidoking.
-    move DOUBLE_EDGE,  RECOIL_EFFECT,              100, NORMAL,       100, 10 ; Natural: tauros, gyarados, snorlax, rhydon, arcanine, onyx, marowak, primeape.
+    move DOUBLE_EDGE,  RECOIL_EFFECT,              100, NORMAL,       100, 10 ; Natural: tauros, gyarados, snorlax, marowak, primeape, pinsir, seaking, etc.
     move TAIL_WHIP,    DEFENSE_DOWN1_EFFECT,         0, BIRD,         100, 30
     move POISON_STING, POISON_SIDE_EFFECT1,         35, POISON,       100, 30 ; ekans, nidos, zubat, tentacool, sandshrew, beedril.
     move TWINEEDLE,    TWINEEDLE_EFFECT,            40, BUG,          100, 20
@@ -79,7 +79,7 @@ Moves:
     move DRILL_PECK,   DEFENSE_DOWN1_EFFECT,        90, FLYING,       100, 15 ; replaced 'NO_ADDITIONAL_EFFECT' with 'DEFENSE_DOWN1_EFFECT'.
     move SUBMISSION,   ATTACK_DOWN1_EFFECT,         90, FIGHTING,     100, 20 ; replaced 'RECOIL_EFFECT' with 'ATTACK_DOWN1_EFFECT'. Machamp signature move.
     move LOW_KICK,     FLINCH_SIDE_EFFECT2,         45, FIGHTING,      90, 25 ; machop, mankey, poliwrath.
-    move COUNTER,      ACCURACY_UP1_EFFECT,          1, FIGHTING,     100, 20 ; TODO: remove this move.
+    move CRUNCH,       DEFENSE_DOWN_SIDE_EFFECT,    80, NORMAL,       100, 20 ; NEW MOVE - replaced Counter.
     move SEISMIC_TOSS, SPECIAL_DAMAGE_EFFECT,        1, FIGHTING,     100, 25 ; fighting types, pinsir.
     move STRENGTH,     ATTACK_UP1_EFFECT,           60, FIGHTING,     100, 30 ; replaced 'NO_ADDITIONAL_EFFECT' with 'ATTACK_UP1_EFFECT'. machop-line and pinsir learn naturally.
     move ABSORB,       DRAIN_HP_EFFECT,             20, GRASS,        100, 30 ; paras, bellsprout, oddish, zubat, butterfree, tangela.
@@ -107,7 +107,7 @@ Moves:
     move CONFUSION,    CONFUSION_SIDE_EFFECT,       50, PSYCHIC_TYPE, 100, 25 ; psychic types, jynx, haunter, ninetales.
     move PSYCHIC_M,    SPECIAL_DOWN1_EFFECT,        90, PSYCHIC_TYPE, 100, 15 ; replaced 'SPECIAL_DOWN_SIDE_EFFECT' with 'SPECIAL_DOWN1_EFFECT'.
     move HYPNOSIS,     SLEEP_EFFECT,                 0, PSYCHIC_TYPE,  70, 20 ; hypno, poliwhirl, exeggutor, gengar.
-    move MEDITATE,     SPECIAL_UP1_EFFECT,           0, BIRD,         100, 25 ; TODO: rename to Calm Mind. replaced 'ATTACK_UP1_EFFECT' with 'SPECIAL_UP1_EFFECT'. signature lines: machop, hitchans, kadabra, mr mime.
+    move CALM_MIND,    SPECIAL_UP1_EFFECT,           0, BIRD,         100, 25 ; NEW MOVE - replaced Meditate. signature lines: machop, hitchans, kadabra, mr mime.
     move AGILITY,      SPEED_UP2_EFFECT,             0, BIRD,         100, 20 ; Natural: beedril, dodrio, arcanine, persian, rapidash (high level), scyther, aerodactyl, electric types (except magneton).
     move QUICK_ATTACK, NO_ADDITIONAL_EFFECT,        45, NORMAL,       100, 20 ; Natural: Beedril, Dodrio, Arcanine, Scyther, Persian, arbok, raticate, staryu, electric types (except magneton).
     move RAGE,         ATTACK_UP1_EFFECT,           65, DRAGON,        90, 20 ; replaced 'RAGE_EFFECT' with 'ATTACK_UP1_EFFECT'. gyarados, tauros, primeape, marowak, rhydon, nidoking, fearow, raticate, arcanine, kangaskhan, kingler, poliwrath, beedrill, mewtwo.
@@ -117,13 +117,13 @@ Moves:
     move SCREECH,      DEFENSE_DOWN2_EFFECT,         0, BIRD,         100, 20 ; onyx, magneton, electabuzz, electrode, persian, arbok, primeape, aerodactyl, golbat, jigglytuff.
     move DOUBLE_TEAM,  EVASION_UP1_EFFECT,           0, BIRD,         100, 15 ; ninetails, gengar, scyther, jolteon, electrode.
     move RECOVER,      HEAL_EFFECT,                  0, BIRD,         100, 15 ; vaporeon, muk, weezing, porygon, alakazam, starmie, lapras, clefairy, mewtwo.
-    move HARDEN,       DEFENSE_UP1_EFFECT,           0, BIRD,         100, 30 ; metapod/kakuna, grimer.
+    move HARDEN,       DEFENSE_UP1_EFFECT,           0, BIRD,         100, 30 ; metapod/kakuna, grimer, pinsir, staryu.
     move MINIMIZE,     EVASION_UP1_EFFECT,           0, BIRD,         100, 15 ; jigglypuff, grimer, gastly, tentacool.
     move SMOKESCREEN,  ACCURACY_DOWN1_EFFECT,        0, BIRD,         100, 20 ; gastly, horsea, magmar, tentacool, koffing.
-    move CONFUSE_RAY,  CONFUSION_EFFECT,             0, GHOST,        100, 20 ; gastly, vulpix, jynx, hypno. TODO: check if Confuse_Ray can hit Normal types.
+    move CONFUSE_RAY,  CONFUSION_EFFECT,             0, GHOST,         90, 20 ; gastly, vulpix, jynx, hypno. TODO: check if Confuse_Ray can hit Normal types.
     move WITHDRAW,     DEFENSE_UP1_EFFECT,           0, BIRD,         100, 30 ; shellder, squirtle, omanyte, kabuto.
     move DEFENSE_CURL, DEFENSE_UP1_EFFECT,           0, BIRD,         100, 30 ; geodude, onyx, sandshrew, jigglypuff, hitmonchan, kabuto, ekans, lickitung.
-    move BARRIER,      DEFENSE_UP2_EFFECT,           0, BIRD,         100, 20 ; mr mime, cloyster, omastar, kabutops.
+    move BARRIER,      DEFENSE_UP2_EFFECT,           0, BIRD,         100, 20 ; mr mime (high level), cloyster, omastar, kabutops.
     move LIGHT_SCREEN, LIGHT_SCREEN_EFFECT,          0, BIRD,         100, 20 ; mr mime, porygon, alakazam, chansey, starmie, clefable, weezing, mewtwo.
     move HAZE,         POISON_SIDE_EFFECT2,         90, GAS,          100, 15 ; weezing, vileplume, gengar.
     move REFLECT,      REFLECT_EFFECT,               0, BIRD,         100, 20 ; mr mime, porygon, alakazam, chansey, starmie, clefable, mewtwo.
@@ -140,9 +140,9 @@ Moves:
     move FIRE_BLAST,   BURN_SIDE_EFFECT2,          110, FIRE,          80, 10
     move WATERFALL,    FLINCH_SIDE_EFFECT1,         70, WATER,        100, 20 ; replaced 'NO_ADDITIONAL_EFFECT' with 'FLINCH_SIDE_EFFECT1'.
     move CLAMP,        TRAPPING_EFFECT,             18, WATER,         85, 20 ; cloyster signature move. ; TODO: maybe change to non-trapping, higher base power, raise user defense, maybe change name to include omaster.
-    move SWIFT,        SWIFT_EFFECT,                70, ELECTRIC,     100, 20 ; TODO: rename to 'Shock Wave' (keep Swift's effect).
+    move DISCHARGE,    PARALYZE_SIDE_EFFECT1,       70, ELECTRIC,     100, 20 ; NEW MOVE - replaced Swift.
     move SKULL_BASH,   RECOIL_EFFECT,              100, ROCK,         100, 10 ; replaced 'CHARGE_EFFECT' with 'RECOIL_EFFECT'. Kabutops, Omastar, Aerodactyl, Blastoise, Marowak, kangaskhan.
-    move SPIKE_CANNON, TWO_TO_FIVE_ATTACKS_EFFECT,  18, ROCK,          90, 20 ; TODO: remove this move. - or change with another that relates to spikes. Edit: replace with the new 'Rollout'.
+    move ROLLOUT,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, ROCK,          90, 20 ; NEW MOVE - replaced Spike_Cannon. Golem, Sandslash (high level).
     move CONSTRICT,    SPEED_DOWN1_EFFECT,          30, BUG,          100, 30 ; Pinsir, Tangela, Lickitung, Tentacruel, Arbok.
     move AMNESIA,      SPECIAL_UP2_EFFECT,           0, BIRD,         100, 15 ; snorlax, slowbro.
     move CONFUSE,      SPECIAL_DOWN1_EFFECT,         0, BIRD,         100, 25 ; NEW MOVE - replaced Kinesis.
@@ -164,7 +164,7 @@ Moves:
     move SPLASH,       SPLASH_EFFECT,                0, BIRD,         100, 40
     move ACID_ARMOR,   DEFENSE_UP2_EFFECT,           0, BIRD,         100, 20 ; muk, vaporeon, tentacruel.
     move CRABHAMMER,   FLINCH_SIDE_EFFECT2,         90, ROCK,          90, 20 ; replaced 'NO_ADDITIONAL_EFFECT' with 'FLINCH_SIDE_EFFECT2'. deixou de ser high-crit. kingler.
-    move EXPLOSION,    BURN_SIDE_EFFECT2,          100, FIRE,         100,  5 ; TODO: remove this move.
+    move DRAGONBREATH, PARALYZE_SIDE_EFFECT2,       65, DRAGON,       100, 20 ; NEW MOVE - replaced Explosion. dragonair, seadra, charizard.
     move FURY_SWIPES,  TWO_TO_FIVE_ATTACKS_EFFECT,  17, NORMAL,        90, 20
     move BONEMERANG,   ATTACK_TWICE_EFFECT,         40, GROUND,       100, 20
     move REST,         HEAL_EFFECT,                  0, BIRD,         100, 30 ; Natural: snorlax, slowbro.
@@ -173,9 +173,9 @@ Moves:
     move SHARPEN,      ATTACK_UP2_EFFECT,            0, BIRD,         100, 20 ; replaced 'ATTACK_UP1_EFFECT' with 'ATTACK_UP2_EFFECT'. Porygon.
     move CONVERSION,   SPECIAL_UP2_EFFECT,           0, BIRD,         100, 15 ; replaced 'CONVERSION_EFFECT' with 'SPECIAL_UP2_EFFECT'. Porygon.
     move TRI_ATTACK,   ACCURACY_UP1_EFFECT,         90, ELECTRIC,     100, 20 ; replaced 'NO_ADDITIONAL_EFFECT' with 'ACCURACY_UP1_EFFECT'. Porygon, Magneton.
-    move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 20
-    move SLASH,        NO_ADDITIONAL_EFFECT,        80, NORMAL,       100, 20 ; high-crit. stronger scratch.
-    move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, BIRD,         100, 10 ; natural: gengar, mr mime, porygon, electrode, alakazam, jolteon.
+    move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 15
+    move SLASH,        NO_ADDITIONAL_EFFECT,        75, NORMAL,       100, 20 ; high-crit. stronger scratch.
+    move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, BIRD,         100, 10 ; natural: gengar (high level), mr mime, porygon, electrode, alakazam (high level), jolteon, arbok, muk (high level), weezing (high level), clefable, tangela.
     move STRUGGLE,      RECOIL_EFFECT,               40, BIRD,        100, 10 ; Always have Struggle as the last move on the list (due to Metronome's internal workings).
     assert_table_length NUM_ATTACKS
 
@@ -197,16 +197,28 @@ Ekans, Charmander, Spearow, Nidoran-M, Zubat, Machop, Rhyhorn, Growlithe, Scythe
 Ataques adicionados:
 
     replacements:
+        move LEEK_STRIKE,  NO_ADDITIONAL_EFFECT,        55, FIGHTING,     100, 30 ; ADDED - replaced Razor_Wind.
         move DRAGON_SLAM,  PARALYZE_SIDE_EFFECT2,       90, DRAGON,       100, 15 ; ADDED - replace slam.
         move GROUND_STOMP, SPEED_DOWN_SIDE_EFFECT,      40, GROUND,       100, 30 ; ADDED - replace stomp.
-        move ICY_MIST,     SPEED_DOWN_SIDE_EFFECT,      40, ICE,          100, 30 ; ADDED - replace mist.
-        move BUG_BITE,     FLINCH_SIDE_EFFECT1,         40, BUG,          100, 30 ; ADDED - replace bubble.
         move SHADOW_BALL,  SPECIAL_DOWN_SIDE_EFFECT,    80, GHOST,        100, 20 ; ADDED - replace mega_kick.
         move DARK_PULSE,   FLINCH_SIDE_EFFECT2,         80, DARK,         100, 20 ; ADDED - replace jump_kick.
+        move ICY_MIST,     SPEED_DOWN_SIDE_EFFECT,      40, ICE,          100, 30 ; ADDED - replace mist.
+        move CALM_MIND,    SPECIAL_UP1_EFFECT,           0, BIRD,         100, 25 ; ADDED - replaced Meditate.
+        move CRUNCH,       DEFENSE_DOWN_SIDE_EFFECT,    80, NORMAL,       100, 20 ; ADDED - replaced Counter.
+        move DISCHARGE,    PARALYZE_SIDE_EFFECT1,       70, ELECTRIC,     100, 20 ; ADDED - replaced Swift.
+        move ROLLOUT,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, ROCK,          90, 20 ; ADDED - replaced Spike_Cannon.
         move CONFUSE,      SPECIAL_DOWN1_EFFECT,         0, BIRD,         100, 30 ; ADDED - replace kinesis.
+        move BUG_BITE,     FLINCH_SIDE_EFFECT1,         40, BUG,          100, 30 ; ADDED - replace bubble.
+        move DRAGONBREATH, PARALYZE_SIDE_EFFECT2,       65, DRAGON,       100, 20 ; ADDED - replaced Explosion.
 
     damage:
-        x
+        move MACH_PUNCH,   NO_ADDITIONAL_EFFECT,        45, FIGHTING,     100, 20 ; priority move - fighting-type quick_attack; Hitmonchan, Machamp signature move.
+        move FLASH_ZAP,    NO_ADDITIONAL_EFFECT,        45, ELECTRIC,     100, 20 ; priority move - eletric-type quick_attack; tirar o fundo branco da animaçao do quick attack e dar a este novo.
+        move BUG_BUZZ,     NO_ADDITIONAL_EFFECT,        90, BUG,          100, 15 ; butterfree, venomoth, beedrill, scyther.
+        move MEGAHORN,     NO_ADDITIONAL_EFFECT,        90, BUG,          100, 15 ; pinsir, nidoking (high), rapidash (high level), seaking (high level), tauros, rhydon.
+        move STEEL_WING,   NO_ADDITIONAL_EFFECT,        75, STEEL,        100, 20 ; pidgeot, aerodactyl, golbat (high level), fearow (high level), charizard (high level).
+        move IRON_TAIL,    NO_ADDITIONAL_EFFECT,        75, STEEL,        100, 20 ; onyx, rhydon, nidoking (high level), arbok (high level), raichu (high level).
+        move IRON_HEAD,    FLINCH_SIDE_EFFECT2,         90, STEEL,        100, 15 ; Rhydon, Tauros, Onix, Golem, Magneton, Electrode
 
     stats:
         move CHARM,        ATTACK_DOWN2_EFFECT,          0, BIRD,         100, 20
@@ -220,35 +232,21 @@ Ataques adicionados:
 
 -- -- -- -- --
 
-Ataques to rename:
-    move MEDITATE,     SPECIAL_UP1_EFFECT,           0, BIRD,         100, 25 ; TODO: rename to Calm Mind.
-    move SWIFT,        SWIFT_EFFECT,                70, ELECTRIC,     100, 20 ; TODO: rename to 'Shock Wave' (keep Swift's effect).
-
--- -- -- -- --
-
 Ataques a serem adicionados:
+    move OMINOUS_WIND, SPECIAL_DOWN1_EFFECT,        45, GHOST,        100, 20
+    move SPIRIT_DRAIN, DRAIN_HP_EFFECT,             65, GHOST,        100, 15 ; Gengar, Jynx, Ninetales (high level), Marowak (high level).
+    move FAINT_ATTACK, SWIFT_EFFECT,                50, DARK,         100, 25
+    move PURSUIT,      ATTACK_UP1_EFFECT,           60, DARK,         100, 20
+    move NIGHT_SLASH,  NO_ADDITIONAL_EFFECT,        75, DARK,         100, 20
 
-    move CRUNCH,       DEFENSE_DOWN_SIDE_EFFECT,    80, NORMAL,       100, 20
-    move MACH_PUNCH,   NO_ADDITIONAL_EFFECT,        45, FIGHTING,     100, 20  ; priority move - fighting-type quick_attack; Hitmonchan, Machamp signature move.
-    move LEEK_STRIKE,  NO_ADDITIONAL_EFFECT,        55, FIGHTING,     100, 30 ; Farfetch'd signature. high crit.
-    move FLASH_ZAP,    NO_ADDITIONAL_EFFECT,        45, ELECTRIC,     100, 20  ; priority move - eletric-type quick_attack; tirar o fundo branco da animaçao do quick attack e dar a este novo.
-    move BUG_BUZZ,     NO_ADDITIONAL_EFFECT,        90, BUG,          100, 15 ; butterfree, venomoth, beedrill, scyther.
-    move MEGAHORN,     NO_ADDITIONAL_EFFECT,        90, BUG,          100, 15 ; pinsir, nidoking (high), rapidash (high level), seaking (high level), tauros, rhydon.
-    move ROLLOUT,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, ROCK,          90, 20 ; Golem, Sandslash (high level).
-    move STEEL_WING,   NO_ADDITIONAL_EFFECT,        75, STEEL,        100, 20 ; pidgeot, aerodactyl, golbat (high level), fearow (high level), charizard (high level).
-    move IRON_TAIL,    NO_ADDITIONAL_EFFECT,        75, STEEL,        100, 20 ; onyx, rhydon, nidoking (high level), arbok (high level), raichu (high level).
-    move IRON_HEAD,    FLINCH_SIDE_EFFECT2,         90, STEEL,        100, 15 ; Rhydon, Tauros, Onix, Golem, Magneton, Electrode
-    move DRAGONBREATH, PARALYZE_SIDE_EFFECT2,       65, DRAGON,       100, 20 ; dragonair, seadra, charizard.
     x
-
 
     move TOXIC_DRAIN,        DRAIN_HP_EFFECT,             65, POISON,          100, 15 ; natural: muk, golbat, arbok, vileplume, venomoth.
     move SLUDGE_BOMB,        POISON_SIDE_EFFECT2,         90, POISON,          100, 15 ; Natural: muk, weezing, tentacruel, victreebel, vileplume, venusaur."
     move POISON_JAB,         POISON_SIDE_EFFECT2,         90, POISON,          100, 15 ; Natural: beedril, arbok, nidoking, nodoqueen, golbat, gengar."
     move POISON_FANG,        POISON_SIDE_EFFECT1,         55, POISON,          100, 25 ; Arbok, Golbat, Nidoking, Nidoqueen, Raticate.
-
     move GIGA_DRAIN,         DRAIN_HP_EFFECT,             80, GRASS,           100, 10 ; Parasect, Victreebel, vileplume, Tangela, venusaur, exeggutor.
-    move SPIRIT_DRAIN,       DRAIN_HP_EFFECT,             65, GHOST,           100, 15 ; Gengar, Jynx, Ninetales (high level), Marowak (high level), Hypno (high level).
+
 
 Mais a adicionar:
     novo Electabuzz signature move: algo como "Shock Smash" que paraliza sempre, 60 power e high-crit.
@@ -265,11 +263,7 @@ Mais a adicionar:
     'Iron Defense' - Defense +2 - Natural: Magneton. Learned: onyx, golem, cloyster, sandslash, metapod/kakuna (high level, lol).
     'Lock On' - Accuracy +2 - Porygon, Aerodactyl, Magneton, Primeape, Marowak, Exeggutor, Mewtwo, Tauros, etc.
 
-Moves to remove (replace with another):
-    move COUNTER,      ACCURACY_UP1_EFFECT,          1, FIGHTING,     100, 20
-	move SPIKE_CANNON, TWO_TO_FIVE_ATTACKS_EFFECT,  18, ROCK,          90, 20 ; or change with another that relates to spikes. Edit: replace with the new 'Rollout'.
-	move EXPLOSION,    BURN_SIDE_EFFECT2,          100, FIRE,         100,  5
-	move AIR_SLASH,    NO_ADDITIONAL_EFFECT,        70, FLYING,       100, 25;  -- to remove (also known as razor_wind)
+Moves to replace with another):
 
 -- -- -- -- --
 
