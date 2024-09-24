@@ -29,7 +29,7 @@ Normal (20 moves)  __FIRST REVISION DONE
 	move SING,         SLEEP_EFFECT,                 0, NORMAL,        80, 20  -- signature move
     move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,        1, NORMAL,       100, 20  -- signature move
     move PAY_DAY,      PAY_DAY_EFFECT,              55, NORMAL,       100, 30  -- signature move
-    move HYPER_FANG,   DEFENSE_DOWN_SIDE_EFFECT,    75, NORMAL,       100, 25  -- signature move
+    move HYPER_FANG,   DEFENSE_DOWN_SIDE_EFFECT,    75, NORMAL,       100, 20  -- signature move
     move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 15  -- signature move
 
 
@@ -38,7 +38,7 @@ Fighting (14 moves)  __FIRST REVISION DONE
     move DOUBLE_KICK,  ATTACK_TWICE_EFFECT,         30, FIGHTING,     100, 20
     move LOW_KICK,     FLINCH_SIDE_EFFECT2,         45, FIGHTING,      90, 25
     move MACH_PUNCH,   NO_ADDITIONAL_EFFECT,        45, FIGHTING,     100, 20  -- new move (priority move)
-    move STRENGTH,     ATTACK_UP1_EFFECT,           60, FIGHTING,     100, 30
+    move STRENGTH,     ATTACK_UP1_EFFECT,           60, FIGHTING,     100, 25
     move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        70, FIGHTING,      90, 25
     move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, FIGHTING,     100, 20
     move TAKE_DOWN,    DEFENSE_DOWN1_EFFECT,        80, FIGHTING,      95, 20
@@ -67,7 +67,7 @@ Fire (6 moves)  __FIRST REVISION DONE
     move FLAMETHROWER, BURN_SIDE_EFFECT2,           90, FIRE,         100, 15
     move FIRE_BLAST,   BURN_SIDE_EFFECT2,          110, FIRE,          80, 10
     
-    move EGG_BOMB,     BURN_SIDE_EFFECT2,           70, FIRE,         100, 15  -- signature move
+    move EGG_BOMB,     BURN_SIDE_EFFECT2,           65, FIRE,         100, 15  -- signature move
 	move SELFDESTRUCT, EXPLODE_EFFECT,             130, FIRE,         100,  5  -- signature move
 
 
@@ -95,7 +95,7 @@ Electric (8 moves)  __FIRST REVISION DONE
 Bug (10 moves)  __FIRST REVISION DONE
     move CONSTRICT,    SPEED_DOWN1_EFFECT,          30, BUG,          100, 30
     move BUG_BITE,     FLINCH_SIDE_EFFECT1,         40, BUG,          100, 30  -- new move
-    move LEECH_LIFE,   DRAIN_HP_EFFECT,             65, BUG,          100, 15
+    move LEECH_LIFE,   DRAIN_HP_EFFECT,             60, BUG,          100, 20
 	move BUG_BUZZ,     NO_ADDITIONAL_EFFECT,        90, BUG,          100, 15  -- new move
 	move MEGAHORN,     NO_ADDITIONAL_EFFECT,        90, BUG,          100, 15  -- new move
 
@@ -120,15 +120,15 @@ Rock (7 moves)  __FIRST REVISION DONE
 
 Steel (4 moves)  __FIRST REVISION DONE
     move CUT,          DEFENSE_DOWN1_EFFECT,        60, STEEL,        100, 25
-    move STEEL_WING,   NO_ADDITIONAL_EFFECT,        75, STEEL,        100, 20  -- new move
-    move IRON_TAIL,    NO_ADDITIONAL_EFFECT,        75, STEEL,        100, 20  -- new move
-	move IRON_HEAD,    FLINCH_SIDE_EFFECT2,         90, STEEL,        100, 15  -- new move
+    move STEEL_WING,   DEFENSE_DOWN_SIDE_EFFECT,    70, STEEL,        100, 20  -- new move
+    move IRON_TAIL,    DEFENSE_DOWN_SIDE_EFFECT,    70, STEEL,        100, 20  -- new move
+	move IRON_HEAD,    FLINCH_SIDE_EFFECT2,         80, STEEL,        100, 15  -- new move
 
 
 Dragon (6 moves)  __FIRST REVISION DONE
     move DRAGON_RAGE,  SPECIAL_DAMAGE_EFFECT,        1, DRAGON,       100, 20
-    move RAGE,         ATTACK_UP1_EFFECT,           65, DRAGON,        90, 20
-    move DRAGONBREATH, PARALYZE_SIDE_EFFECT1,       65, DRAGON,       100, 20  -- new move
+    move DRAGONBREATH, FLINCH_SIDE_EFFECT2,         60, DRAGON,       100, 20  -- new move
+    move RAGE,         ATTACK_UP1_EFFECT,           70, DRAGON,        90, 15
     move DRAGON_SLAM,  PARALYZE_SIDE_EFFECT2,       90, DRAGON,       100, 15  -- new move
     move THRASH,       THRASH_PETAL_DANCE_EFFECT,  100, DRAGON,       100,  5
     move HYPER_BEAM,   HYPER_BEAM_EFFECT,          130, DRAGON,        80,  5
@@ -156,7 +156,7 @@ Ghost (5 moves)  __FIRST REVISION DONE
     move CONFUSE_RAY,  CONFUSION_EFFECT,             0, GHOST,         90, 20
 	
     move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,        100, 25
-	move OMINOUS_WIND, SPECIAL_DOWN1_EFFECT,        45, GHOST,        100, 20  -- new move
+	move OMINOUS_WIND, SPECIAL_DOWN1_EFFECT,        50, GHOST,        100, 20  -- new move
 	move SPIRIT_DRAIN, DRAIN_HP_EFFECT,             65, GHOST,        100, 15  -- new move
     move SHADOW_BALL,  ACCURACY_DOWN1_EFFECT,       80, GHOST,        100, 15
 
@@ -179,7 +179,7 @@ Grass (13 moves)
     move SLEEP_POWDER, SLEEP_EFFECT,                 0, GRASS,         70, 20
     move LEECH_SEED,   LEECH_SEED_EFFECT,            0, GRASS,        100, 15
 	
-    move ABSORB,       DRAIN_HP_EFFECT,             20, GRASS,        100, 30
+    move ABSORB,       DRAIN_HP_EFFECT,             25, GRASS,        100, 25
     move VINE_WHIP,    NO_ADDITIONAL_EFFECT,        40, GRASS,        100, 30
     move WRAP,         TRAPPING_EFFECT,             16, GRASS,         85, 30
     move MEGA_DRAIN,   DRAIN_HP_EFFECT,             50, GRASS,        100, 20
@@ -762,29 +762,29 @@ Rock: - - - - - - - - - - - -
 Onix
 original: 35 45 160 30 70 - 340
 smith   : 75 80 160 65 85 - 465
-revised : 95 90 150 70 50 - 455
+revised : 80 90 160 70 50 - 450
 
 Golem
 original: 80 110 130 55 45 - 420
-revised : 90 110 135 60 70 - 465
+revised : 90 110 130 55 70 - 455
 * Graveler also +15Hp (55 to 70), +15Speed (35 to 50).
 
 Rhydon
 original: 105 130 120 45 40 - 440
-revised : 105 125 115 55 60 - 460
-* Rhyhorn also +15Attack (85 to 100), -5Defense (95 to 90), +20Speed (25 to 45).
+revised : 100 125 115 60 60 - 460
+* Rhyhorn also +15Attack (85 to 100), +5Speed (25 to 30).
 
 Omastar
-original: 70 60  125 115 55 - 425
-revised : 70 85  125 115 65 - 460
+original: 70 60 125 115 55 - 425
+revised : 70 85 125 115 65 - 460
 
 Kabutops
-original: 60 115 105 70  80 - 430
-revised : 70 115 110 80  85 - 460
+original: 60 115 105 70 80 - 430
+revised : 70 115 110 80 85 - 460
 
 Aerodactyl
-original: 80 105 65  60  130 - 440
-revised : 70 115 80  70  125 - 460
+original: 80 105 65 60 130 - 440
+revised : 70 115 80 70 125 - 460
 
 
 Ground: - - - - - - - - - - - - - -
@@ -792,7 +792,7 @@ Ground: - - - - - - - - - - - - - -
 Marowak
 original: 60 80 110 50 45 - 345
 smith   : 60 80 110 80 45 - 375
-revised : 65 90 100 80 80 - 415
+revised : 65 90 100 75 85 - 415
 
 Sandslash
 original: 75 100 110 55 65 - 405
@@ -827,12 +827,12 @@ revised : 100 70 80 110 70 - 430
 Wigglytuff
 original: 140 70 45 50 45 - 350
 smith   : 140 70 55 85 45 - 395
-revised : 140 75 50 70 75 - 410
-* Jigglypuff also -5Hp (115 to 110), +10Defense (20 to 30), +15Special (25 to 40), +30Speed (20 to 50).
+revised : 140 75 50 70 80 - 415
+* Jigglypuff also -5Hp (115 to 110), +10Defense (20 to 30), +15Special (25 to 40), +35Speed (20 to 55).
 
 Raticate
-original: 55 81 60 50 97  - 343
-revised : 65 95 60 55 100 - 375
+original: 55 81 60 50 97 - 343
+revised : 65 95 60 56 99 - 375
 
 Lickitung
 original: 90 55 75 60 30 - 310
@@ -983,8 +983,8 @@ Weezing
 original: 65  90 120 85  60 - 420
 revised : 120 90 100 100 50 - 460
 robo    : 115 85 95  100 35 - 430
-revised2: 105 90 105 100 50 - 450
-* Koffing also +35Hp (40 to 75), -15Defense (95 to 80), +20Special (60 to 80), -5Speed (35 to 30).
+revised2: 105 90 105 100 60 - 460
+* Koffing also +35Hp (40 to 75), -15Defense (95 to 80), +20Special (60 to 80), +5Speed (35 to 40).
 
 Gengar
 original: 60 65 60 130 110 - 425
@@ -1022,24 +1022,24 @@ revised : 75 110 65 65 95 - 410
 Machamp
 original: 90  130 80 65 55 - 420
 revised : 100 130 80 70 75 - 470
-* Machoke also +5Hp (80 to 85) and +20Speed (45 to 65).
-* Machop also +15 Speed (35 to 50).
+* Machoke also +10Hp (80 to 90) and +15Speed (45 to 60).
+* Machop also +15Speed (35 to 50).
 
 Poliwrath
 original: 90 85 95 70 70 - 410
-revised : 95 95 85 85 90 - 450
-* Poliwhirl also +15Special (50 to 65), -5Speed (90 to 85).
-* Poliwag also -10 Attack (50 to 40), -20Speed (90 to 70).
+revised : 95 95 85 85 85 - 445
+* Poliwhirl also +15Special (50 to 65).
+* Poliwag also -10 Attack (50 to 40), -10Speed (90 to 80).
 
 Hitmonlee
-original: 50 120  53 35 87  - 345
-smith   : 65 120  70 60 93  - 408
-revised : 80 120  65 65 100 - 430
+original: 50 120 53 35 87  - 345
+smith   : 65 120 70 60 93  - 408
+revised : 80 120 60 65 100 - 425
 
 Hitmonchan
-original: 50  105 79 35  76 - 345
-smith   : 60  50  79 105 76 - 370
-revised : 90  90  95 80  75 - 430
+original: 50 105 79 35  76 - 345
+smith   : 60 50  79 105 76 - 370
+revised : 85 90  95 75  85 - 425
 
 
 Water: - - - - - - - - - - - - - -
@@ -1058,7 +1058,7 @@ revised : 95 70 115 95 30 - 405
 
 Kingler
 original: 55 130 115 50 75 - 425
-revised : 55 120 105 80 75 - 435
+revised : 55 120 110 80 75 - 440
 * Krabby also -15Attack (105 to 90), -10Defense (90 to 80), +35Special (25 to 60), +5Speed (50 to 55).
 
 Seaking
@@ -1079,7 +1079,7 @@ Dragon: - - - - - - - - - - - - - -
 Seadra
 original: 55 65 95 95 85 - 395
 revised : 90 60 90 90 90 - 420
-* Horsea also +15HP (30 to 45), -5Special (70 to 65), +10Speed (60 to 70).
+* Horsea also +15HP (30 to 45), -5Special (70 to 65), +5Speed (60 to 65).
 
 Gyarados
 original: 95 125 79 100 81 - 480

@@ -7,4 +7,5 @@ HighCriticalMoves:
 	db RAZOR_LEAF
 	db SLASH
 	db LEEK_STRIKE
+	db HYPER_FANG
 	db -1 ; end
