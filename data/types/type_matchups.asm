@@ -144,12 +144,13 @@ TypeEffects:
 	db GAS,          BUG,          SUPER_EFFECTIVE
 	db GAS,          GHOST,        NOT_VERY_EFFECTIVE
 	db GAS,          POISON,       NOT_VERY_EFFECTIVE
+	db GAS,          FLYING,       NOT_VERY_EFFECTIVE
+	db GAS,          ROCK,         NOT_VERY_EFFECTIVE
+	db GAS,          DRAGON,       NOT_VERY_EFFECTIVE
 	db GAS,          GAS,          NOT_VERY_EFFECTIVE
 	db FIRE,         GAS,          SUPER_EFFECTIVE
 	db ICE,          GAS,          SUPER_EFFECTIVE
-	db ELECTRIC,     GAS,          SUPER_EFFECTIVE
 	db FLYING,       GAS,          SUPER_EFFECTIVE
-	db GRASS,        GAS,          NOT_VERY_EFFECTIVE
 	db BUG,          GAS,          NOT_VERY_EFFECTIVE
 	db POISON,       GAS,          NOT_VERY_EFFECTIVE
 	db NORMAL,       GAS,          NOT_VERY_EFFECTIVE
