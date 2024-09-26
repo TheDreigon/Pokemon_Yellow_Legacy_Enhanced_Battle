@@ -114,7 +114,7 @@ Rock (7 moves)  __FIRST REVISION DONE
 
 	move HORN_DRILL,   DEFENSE_DOWN1_EFFECT,       120, ROCK,          80,  5  -- signature move
     move CRABHAMMER,   FLINCH_SIDE_EFFECT2,         90, ROCK,          90, 20  -- signature move
-    move CLAMP,        TRAPPING_EFFECT,             22, ROCK,          80, 20  -- signature move
+    move CLAMP,        TRAPPING_EFFECT,             20, ROCK,          90, 20  -- signature move
     move ROLLOUT,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, ROCK,          90, 20  -- new signature move
 
 
@@ -130,7 +130,7 @@ Dragon (6 moves)  __FIRST REVISION DONE
     move DRAGONBREATH, FLINCH_SIDE_EFFECT2,         60, DRAGON,       100, 20  -- new move
     move RAGE,         ATTACK_UP1_EFFECT,           70, DRAGON,        90, 15
     move DRAGON_SLAM,  PARALYZE_SIDE_EFFECT2,       90, DRAGON,       100, 15  -- new move
-    move THRASH,       THRASH_PETAL_DANCE_EFFECT,  100, DRAGON,       100,  5
+    move THRASH,       THRASH_PETAL_DANCE_EFFECT,  100, DRAGON,       100, 10
     move HYPER_BEAM,   HYPER_BEAM_EFFECT,          130, DRAGON,        80,  5
 	
 	
@@ -173,18 +173,19 @@ Dark (7 moves)  __FIRST REVISION DONE
     move LOVELY_KISS,  SLEEP_EFFECT,                 0, DARK,          80, 20  -- signature move
 
 
-Grass (13 moves)
+Grass (13 moves)  __FIRST REVISION DONE
     move POISONPOWDER, POISON_EFFECT,                0, GRASS,         90, 20
     move STUN_SPORE,   PARALYZE_EFFECT,              0, GRASS,         80, 20
     move SLEEP_POWDER, SLEEP_EFFECT,                 0, GRASS,         70, 20
-    move LEECH_SEED,   LEECH_SEED_EFFECT,            0, GRASS,        100, 15
+    move LEECH_SEED,   LEECH_SEED_EFFECT,            0, GRASS,        100, 20
 	
-    move ABSORB,       DRAIN_HP_EFFECT,             25, GRASS,        100, 25
+    move ABSORB,       DRAIN_HP_EFFECT,             20, GRASS,        100, 25
     move VINE_WHIP,    NO_ADDITIONAL_EFFECT,        40, GRASS,        100, 30
     move WRAP,         TRAPPING_EFFECT,             16, GRASS,         85, 30
     move MEGA_DRAIN,   DRAIN_HP_EFFECT,             50, GRASS,        100, 20
     move RAZOR_LEAF,   NO_ADDITIONAL_EFFECT,        70, GRASS,        100, 20
-    move PETAL_DANCE,  THRASH_PETAL_DANCE_EFFECT,  100, GRASS,        100,  5
+	move GIGA_DRAIN,   DRAIN_HP_EFFECT,             80, GRASS,        100, 15  -- new move
+    move PETAL_DANCE,  THRASH_PETAL_DANCE_EFFECT,  100, GRASS,        100, 10
     move SOLARBEAM,    CHARGE_EFFECT,              120, GRASS,        100, 10
 
     move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  18, GRASS,        100, 15  -- signature move
@@ -541,6 +542,9 @@ Chansey: Normal -> Fairy/Normal
 Clefairy/Clefable: Normal -> Fairy
 Mr. Mime: Psychic -> Psychic/Fairy
 Koffing/Weezing: Poison -> Poison/Gas (Gas: new typing, immune to Ground)
+Duduo/Dodrio: Normal/Flying -> Normal
+Rhyhorn/Rhydon: Rock/Ground -> Rock
+
 
 - - - - - - - - - - 
 
@@ -623,9 +627,9 @@ Fairy - revised:
 	
 Gas - new: 
 	strong VS Grass, Fairy, Bug; 
-	not strong VS Ghost, Poison, Gas; 
-	weak TO Fire, Ice, Eletric, Flying; 
-	resists Grass, Bug, Poison, Normal, Ghost, Fighting, Gas;
+	not strong VS Ghost, Poison, Flying, Rock, Dragon, Gas; 
+	weak TO Fire, Ice, Flying; 
+	resists Bug, Poison, Normal, Ghost, Fighting, Gas;
 	Immune TO Ground.
 	Does not affect Steel.
 
@@ -762,29 +766,29 @@ Rock: - - - - - - - - - - - -
 Onix
 original: 35 45 160 30 70 - 340
 smith   : 75 80 160 65 85 - 465
-revised : 80 90 160 70 50 - 450
+revised : 80 90 150 70 50 - 440
 
 Golem
 original: 80 110 130 55 45 - 420
-revised : 90 110 130 55 70 - 455
+revised : 90 110 130 50 70 - 450
 * Graveler also +15Hp (55 to 70), +15Speed (35 to 50).
 
 Rhydon
 original: 105 130 120 45 40 - 440
-revised : 100 125 115 60 60 - 460
-* Rhyhorn also +15Attack (85 to 100), +5Speed (25 to 30).
+revised : 100 120 120 60 60 - 460
+* Rhyhorn also +10Speed (25 to 35).
 
 Omastar
 original: 70 60 125 115 55 - 425
-revised : 70 85 125 115 65 - 460
+revised : 70 90 120 115 55 - 450
 
 Kabutops
 original: 60 115 105 70 80 - 430
-revised : 70 115 110 80 85 - 460
+revised : 70 115 105 75 85 - 450
 
 Aerodactyl
 original: 80 105 65 60 130 - 440
-revised : 70 115 80 70 125 - 460
+revised : 70 105 90 65 120 - 450
 
 
 Ground: - - - - - - - - - - - - - -
@@ -806,13 +810,13 @@ revised : 45 90 55 65 120 - 375
 Nidoqueen
 original: 90  82 87 75 76 - 410
 revised : 100 85 85 80 80 - 430
-* Nidorina also +5HP (70 to 75), +Special (55 to 60), and +5Speed (56 to 61).
-* Nidoran-F also +5Speed (41 to 46).
+* Nidorina also +5HP (70 to 75), and +9Speed (56 to 65).
+* Nidoran-F also +9Speed (41 to 50).
 
 Nidoking
 original: 81 92  77 75 85 - 410
-revised : 90 100 80 75 85 - 430
-* Nidorino also +5HP (61 to 66), +5Attack (72 to 77), and +5Speed (65 to 70).
+revised : 90 100 85 75 80 - 430
+* Nidorino also +4HP (61 to 65), +8Attack (72 to 80), and +5Speed (65 to 70).
 * Nidoran-M also +5Speed (50 to 55).
 
 
@@ -949,8 +953,8 @@ original: 65 50 35 95  95  - 340
 revised : 65 55 45 115 100 - 380
 
 Lapras
-original: 130 85 80 95 60 - 450
-revised : 150 80 80 95 60 - 465
+original: 130 85 80 95  60 - 450
+revised : 150 80 80 100 60 - 470
 
 
 Poison: - - - - - - - - - - - - - -
@@ -1046,7 +1050,7 @@ Water: - - - - - - - - - - - - - -
 
 Golduck
 original: 80 82 78 80 85 - 405
-revised : 80 90 70 90 90 - 420
+revised : 80 85 70 90 90 - 415
 
 Tentacruel
 original: 80 70 65 120 100 - 435
