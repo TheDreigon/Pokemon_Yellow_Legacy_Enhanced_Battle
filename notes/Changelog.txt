@@ -38,10 +38,10 @@ Fighting (14 moves)  __FIRST REVISION DONE
     move DOUBLE_KICK,  ATTACK_TWICE_EFFECT,         30, FIGHTING,     100, 20
     move LOW_KICK,     FLINCH_SIDE_EFFECT2,         45, FIGHTING,      90, 25
     move MACH_PUNCH,   NO_ADDITIONAL_EFFECT,        45, FIGHTING,     100, 20  -- new move (priority move)
-    move STRENGTH,     ATTACK_UP1_EFFECT,           60, FIGHTING,     100, 25
+    move STRENGTH,     ATTACK_UP1_EFFECT,           60, FIGHTING,     100, 30
     move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        70, FIGHTING,      90, 25
     move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, FIGHTING,     100, 20
-    move TAKE_DOWN,    DEFENSE_DOWN1_EFFECT,        80, FIGHTING,      95, 20
+    move TAKE_DOWN,    DEFENSE_DOWN1_EFFECT,        80, FIGHTING,     100, 20
 
     move ROLLING_KICK, FLINCH_SIDE_EFFECT2,         75, FIGHTING,     100, 25  -- signature move
     move HI_JUMP_KICK, NO_ADDITIONAL_EFFECT,       100, FIGHTING,      90, 20  -- signature move
@@ -127,7 +127,7 @@ Steel (4 moves)  __FIRST REVISION DONE
 
 Dragon (6 moves)  __FIRST REVISION DONE
     move DRAGON_RAGE,  SPECIAL_DAMAGE_EFFECT,        1, DRAGON,       100, 20
-    move DRAGONBREATH, FLINCH_SIDE_EFFECT2,         60, DRAGON,       100, 20  -- new move
+    move DRAGONBREATH, PARALYZE_SIDE_EFFECT1,       65, DRAGON,       100, 20  -- new move
     move RAGE,         ATTACK_UP1_EFFECT,           70, DRAGON,        90, 15
     move DRAGON_SLAM,  PARALYZE_SIDE_EFFECT2,       90, DRAGON,       100, 15  -- new move
     move THRASH,       THRASH_PETAL_DANCE_EFFECT,  100, DRAGON,       100, 10
@@ -138,35 +138,35 @@ Water (6 moves)  __FIRST REVISION DONE
     move WATER_GUN,    NO_ADDITIONAL_EFFECT,        40, WATER,        100, 30
     move BUBBLEBEAM,   CONFUSION_SIDE_EFFECT,       55, WATER,        100, 25
     move WATERFALL,    FLINCH_SIDE_EFFECT1,         70, WATER,        100, 20
-    move SURF,         SPEED_DOWN_SIDE_EFFECT,      90, WATER,        100, 15
-    move HYDRO_PUMP,   FLINCH_SIDE_EFFECT2,        110, WATER,         80, 10
+    move SURF,         SPEED_DOWN1_EFFECT,          90, WATER,        100, 15
+    move HYDRO_PUMP,   SPEED_DOWN2_EFFECT,         110, WATER,         80, 10
 
 
 Psychic (6 moves)  __FIRST REVISION DONE
     move HYPNOSIS,     SLEEP_EFFECT,                 0, PSYCHIC_TYPE,  70, 20
 	
-    move PSYWAVE,      CONFUSION_SIDE_EFFECT,       30, PSYCHIC_TYPE, 100, 30
-    move CONFUSION,    CONFUSION_SIDE_EFFECT,       50, PSYCHIC_TYPE, 100, 25
-	move PSYBEAM,      SPECIAL_DOWN_SIDE_EFFECT,    70, PSYCHIC_TYPE, 100, 20
-    move PSYCHIC_M,    SPECIAL_DOWN1_EFFECT,        90, PSYCHIC_TYPE, 100, 15
+    move PSYWAVE,      CONFUSION_EFFECT,            25, PSYCHIC_TYPE, 100, 30
+    move CONFUSION,    CONFUSION_SIDE_EFFECT,       45, PSYCHIC_TYPE, 100, 25
+	move PSYBEAM,      SPECIAL_DOWN1_EFFECT,        65, PSYCHIC_TYPE, 100, 20
+    move PSYCHIC_M,    SPECIAL_UP1_EFFECT,          85, PSYCHIC_TYPE, 100, 15
     move DREAM_EATER,  DREAM_EATER_EFFECT,         100, PSYCHIC_TYPE, 100, 20
 	
 
 Ghost (5 moves)  __FIRST REVISION DONE
-    move CONFUSE_RAY,  CONFUSION_EFFECT,             0, GHOST,         90, 20
+    move CONFUSE_RAY,  CONFUSION_EFFECT,             0, GHOST,        100, 20
 	
-    move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,        100, 25
-	move OMINOUS_WIND, SPECIAL_DOWN1_EFFECT,        50, GHOST,        100, 20  -- new move
-	move SPIRIT_DRAIN, DRAIN_HP_EFFECT,             65, GHOST,        100, 15  -- new move
-    move SHADOW_BALL,  ACCURACY_DOWN1_EFFECT,       80, GHOST,        100, 15
+    move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,        100, 30
+	move OMINOUS_WIND, SPECIAL_DOWN1_EFFECT,        55, GHOST,        100, 20  -- new move
+	move SPIRIT_DRAIN, DRAIN_HP_EFFECT,             65, GHOST,        100, 20  -- new move
+    move SHADOW_BALL,  ACCURACY_DOWN1_EFFECT,       75, GHOST,        100, 20  -- new move
 
 
 Dark (7 moves)  __FIRST REVISION DONE
     move GLARE,        PARALYZE_EFFECT,              0, DARK,          90, 20
 	
-    move LICK,         PARALYZE_SIDE_EFFECT2,       30, DARK,         100, 30
-	move FAINT_ATTACK, SWIFT_EFFECT,                50, DARK,         100, 25  -- new move
-	move PURSUIT,      ATTACK_UP1_EFFECT,           60, DARK,         100, 20  -- new move
+    move LICK,         PARALYZE_SIDE_EFFECT2,       25, DARK,         100, 30
+	move PURSUIT,      NO_ADDITIONAL_EFFECT,        45, DARK,         100, 20  -- new move (priority move)
+	move FAINT_ATTACK, SWIFT_EFFECT,                60, DARK,         100, 25  -- new move
 	move NIGHT_SLASH,  NO_ADDITIONAL_EFFECT,        70, DARK,         100, 20  -- new move
     move DARK_PULSE,   FLINCH_SIDE_EFFECT2,         80, DARK,         100, 15  -- new move
 
@@ -188,7 +188,7 @@ Grass (13 moves)  __FIRST REVISION DONE
     move PETAL_DANCE,  THRASH_PETAL_DANCE_EFFECT,  100, GRASS,        100, 10
     move SOLARBEAM,    CHARGE_EFFECT,              120, GRASS,        100, 10
 
-    move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  18, GRASS,        100, 15  -- signature move
+    move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, GRASS,        100, 15  -- signature move
 
 
 Ground (7 moves)
@@ -525,18 +525,19 @@ Seel: Water -> Water/Ice (Dewgong already is Water/Ice)
 Gyarados: Water/Flying -> Water/Dragon
 Porygon: Normal -> Electric/Normal
 Kangaskhan: Normal -> Normal/Fighting
-Horsea/Seadra: Water -> Water/Dragon
-Jynx: Ice/Psychic -> Ice/Ghost
+Seadra: Water -> Water/Dragon
+Jynx: Ice/Psychic -> Ghost/Ice
 Tangela: Grass -> Grass/Water (mesmo que não aprenda ataques de água naturalmente
 Marowak: Ground -> Ground/Dark
 Magnemite/Magneton: Electric -> Electric/Steel
 Voltorb/Electrode: Eletric -> Electric/Steel
+Raticate: Normal -> Normal/Dark
 Arbok: Poison -> Poison/Dark
 Drowzee/Hypno: Psychic -> Psychic/Dark
 Mankey/Primeape: Fighting -> Fighting/Dark
 Gastly/Haunter: Ghost/Poison - Ghost/Gas
 Gengar: Ghost/Poison - Ghost/Dark
-Vulpix/Ninetales: Fire -> Fire/Fairy
+Vulpix/Ninetales: Fire -> Ghost/Fire
 Jigglypuff/Wigglytuff: Normal -> Fairy/Normal
 Chansey: Normal -> Fairy/Normal
 Clefairy/Clefable: Normal -> Fairy
@@ -544,6 +545,7 @@ Mr. Mime: Psychic -> Psychic/Fairy
 Koffing/Weezing: Poison -> Poison/Gas (Gas: new typing, immune to Ground)
 Duduo/Dodrio: Normal/Flying -> Normal
 Rhyhorn/Rhydon: Rock/Ground -> Rock
+Mewtwo: Psychic -> Psychic/Dark
 
 
 - - - - - - - - - - 
@@ -569,6 +571,7 @@ Fighting: Regularly Effective against Dragon -> Super-Effective against Dragon. 
 Fighting: Super-Effective against Normal -> Regularly against Normal. ___DONE _
 
 Psychic: Super-Effective against Poison -> Regularly Effective against Poison. ___DONE _
+Psychic: Super-Effective against Ghost -> Not Very Effective against Ghost. ___DONE _
 Psychic: Regularly Effective against Bug -> Not Very Effective against Bug. ___DONE _
 
 Flying: Regularly Effective against Ice -> Not Very Effective against Ice. ___DONE _
@@ -603,11 +606,11 @@ Dark - original:
 	Immune TO Psychic.
 	
 Dark - revised: 
-	strong VS Psychic, Ghost, Normal; 
-	not strong VS Fighting, Dark, Fairy, Bug; 
-	weak TO Fighting, Bug, Fairy; 
-	resists Ghost, Dark;
-	Immune TO Psychic.
+	strong VS Psychic, Normal; 
+	not strong VS Fighting, Fairy, Bug, Ghost; 
+	weak TO Fighting, Bug, Fairy, Ghost; 
+	resists Psychic;
+	Immune TO Dark / Does not affect Dark.
 	
 	
 Fairy - original: 
@@ -698,16 +701,16 @@ Starters: - - - - -  - - - - -
 
 Venusaur
 original: 80  82 83 100 80 - 425
-revised : 100 85 85 100 80 - 450
+revised : 100 85 85 110 80 - 460
 
 Charizard
-original: 78  84 78 85 100 - 425
-smith   : 78  84 78 95 100 - 435
-revised : 90  95 80 95 90  - 450
+original: 78 84  78 85 100 - 425
+smith   : 78 84  78 95 100 - 435
+revised : 90 100 80 100 90 - 460
 
 Blastoise
-original: 79  83 100 85 78 - 425
-revised : 95  85 100 90 80 - 450
+original: 79 83 100 85 78 - 425
+revised : 95 85 110 95 75 - 460
 
 Pikachu
 original: 35 55 30 50 90 - 260
@@ -805,7 +808,7 @@ revised : 75 105 110 55 70 - 415
 Dugtrio
 original: 35 80 50 70 120 - 355
 smith   : 35 90 50 70 120 - 365
-revised : 45 90 55 65 120 - 375
+revised : 45 90 50 70 120 - 375
 
 Nidoqueen
 original: 90  82 87 75 76 - 410
@@ -841,7 +844,7 @@ revised : 65 95 60 56 99 - 375
 Lickitung
 original: 90 55 75 60 30 - 310
 smith   : 95 70 85 75 30 - 355
-revised : 90 70 85 80 50 - 375
+revised : 90 75 80 70 50 - 365
 
 Snorlax
 original: 160 110 65 65 30 - 430
@@ -849,15 +852,15 @@ revised : 180 120 60 80 20 - 460
 
 Tauros
 original: 75 100 95 70 110 - 450
-revised : 80 120 75 55 110 - 440
+revised : 90 120 75 55 110 - 450
 
 Kangaskhan
 original: 105 95  80 40 90 - 410
-revised : 105 100 80 55 80 - 420
+revised : 105 105 80 60 80 - 430
 
 Chansey
-original: 250 5  5  105 50 - 415
-revised : 250 10 10 100 80 - 450
+original: 250 5 5 105 50 - 415
+revised : 250 5 5 100 80 - 440
 
 Persian
 original: 65 70 60 65 115 - 375
@@ -908,7 +911,7 @@ revised : 40 65 80 100 140 - 425
 
 Electabuzz
 original: 65 83 57 85 105 - 395
-revised : 75 95 60 95 105 - 430
+revised : 75 95 60 95 100 - 425
 
 Porygon
 original: 65 60 70 75  40 - 310
@@ -935,14 +938,15 @@ revised : 70 95  70 80 110 - 425
 Magmar
 original: 65 95 57 85 93 - 395
 smith   : 65 95 57 95 93 - 405
-revised : 75 95 75 95 90 - 430
+revised : 75 95 75 95 85 - 425
 
 
 Ice: - - - - - - - - - - - - - -
 
 Dewgong
 original: 90  70 80 95 70 - 405
-revised : 100 80 80 90 70 - 420
+revised : 110 75 80 95 70 - 430
+* Seel also +15HP (65 to 80).
 
 Cloyster
 original: 50 95 180 85 70 - 480
@@ -953,8 +957,8 @@ original: 65 50 35 95  95  - 340
 revised : 65 55 45 115 100 - 380
 
 Lapras
-original: 130 85 80 95  60 - 450
-revised : 150 80 80 100 60 - 470
+original: 130 85 80 95 60 - 450
+revised : 130 80 90 95 65 - 460
 
 
 Poison: - - - - - - - - - - - - - -
@@ -992,7 +996,7 @@ revised2: 105 90 105 100 60 - 460
 
 Gengar
 original: 60 65 60 130 110 - 425
-revised : 60 85 60 125 115 - 445
+revised : 60 85 60 120 115 - 440
 * Haunter also +5Attack (50 to 55).
 
 
@@ -1050,32 +1054,31 @@ Water: - - - - - - - - - - - - - -
 
 Golduck
 original: 80 82 78 80 85 - 405
-revised : 80 85 70 90 90 - 415
+revised : 80 85 70 95 90 - 420
+* Psyduck also +5Special (50 to 55), and +5Speed (55 to 60).
 
 Tentacruel
 original: 80 70 65 120 100 - 435
-revised : 90 95 65 100 90  - 440
+revised : 90 90 65 110 100 - 455
 
 Slowbro
 original: 95 75 110 80 30 - 390
 revised : 95 70 115 95 30 - 405
+* Slowpoke also +20Special (40 to 60).
 
 Kingler
 original: 55 130 115 50 75 - 425
-revised : 55 120 110 80 75 - 440
-* Krabby also -15Attack (105 to 90), -10Defense (90 to 80), +35Special (25 to 60), +5Speed (50 to 55).
+revised : 60 115 110 80 75 - 440
+* Krabby also -20Attack (105 to 85), -10Defense (90 to 80), +25Special (25 to 50), +5Speed (50 to 55).
 
 Seaking
 original: 80 92 65 80 68 - 385
-revised : 80 95 65 85 80 - 410
+revised : 90 95 65 85 80 - 420
+* Goldeen also +15HP (45 to 60), -2Attack (67 to 65), and +2Speed (63 to 65).
 
 Starmie
 original: 60 75 85 100 115 - 435
-revised : 60 70 80 105 110 - 425
-
-Gyarados
-original: 95 125 79 100 81 - 480
-revised : 95 130 80 95  80 - 490
+revised : 60 70 85 110 110 - 435
 
 
 Dragon: - - - - - - - - - - - - - -
@@ -1087,7 +1090,7 @@ revised : 90 60 90 90 90 - 420
 
 Gyarados
 original: 95 125 79 100 81 - 480
-revised : 95 130 85 90  80 - 480
+revised : 95 130 85 89  81 - 480
 
 Dragonite
 original: 91  134 95 100 80 - 500
@@ -1107,14 +1110,14 @@ revised : 80 85 75 110 75 - 425
 Mr Mime
 original: 40 45 65 100 90  - 340
 revised : 50 55 60 105 105 - 375
-revised2: 50 45 80 105 100 - 380
+revised2: 50 50 80 105 100 - 385
 
 
 Legendary: - - - - - - - - - - - - - -
 
 Mewtwo
 original: 106 110 90  154 130 - 590
-revised : 100 100 100 150 140 - 600
+revised : 100 100 100 150 150 - 600
 
 Articuno
 original: 90  85 100 125 85  - 485

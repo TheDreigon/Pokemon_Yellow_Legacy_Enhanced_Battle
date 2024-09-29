@@ -1,5 +1,4 @@
 HighCriticalMoves:
-	db PAY_DAY
 	db GUILLOTINE
 	db CUT
 	db HORN_ATTACK
