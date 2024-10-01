@@ -17,10 +17,10 @@ Moves:
     move DOUBLESLAP,   TWO_TO_FIVE_ATTACKS_EFFECT,  15, NORMAL,        90, 20
     move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, FIGHTING,     100, 20 ; hitmonchan, kangaskhan, machamp on level-up (not machop/machoke), primeape.
     move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        70, FIGHTING,      90, 25 ; slightly weaker comet_punch. hitmonchan, machoke-line, primeape, kangaskhan, etc.
-    move GIGA_DRAIN,   DRAIN_HP_EFFECT,             80, GRASS,        100, 15 ; NEW MOVE - replaced Pay_Day. high level. Parasect, Victreebel, vileplume, Tangela, venusaur, exeggutor.
-    move FIRE_PUNCH,   BURN_SIDE_EFFECT1,           55, FIRE,         100, 25 ; rename to Fang instead of Punch
-    move ICE_PUNCH,    FREEZE_SIDE_EFFECT,          55, ICE,          100, 25 ; rename to Fang instead of Punch
-    move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,       55, ELECTRIC,     100, 25 ; rename to Fang instead of Punch
+    move GIGA_DRAIN,   DRAIN_HP_EFFECT,             80, GRASS,        100, 15 ; NEW MOVE - replaced Pay_Day. high level. Parasect, Victreebel, Tangela, venusaur.
+    move FIRE_PUNCH,   BURN_SIDE_EFFECT1,           55, FIRE,         100, 25 ; rename to Fang instead of Punch. TODO: Update: Have both fangs and punches.
+    move ICE_PUNCH,    FREEZE_SIDE_EFFECT,          55, ICE,          100, 25 ; rename to Fang instead of Punch. TODO: Update: Have both fangs and punches.
+    move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,       55, ELECTRIC,     100, 25 ; rename to Fang instead of Punch. TODO: Update: Have both fangs and punches.
     move SCRATCH,      NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 30 ; pokemon learns either Scratch, Bite, or Tackle.
     move VICEGRIP,     PARALYZE_SIDE_EFFECT1,       75, BUG,          100, 25 ; replaced 'NO_ADDITIONAL_EFFECT' with 'PARALYZE_SIDE_EFFECT1'. pinsir, kingler.
     move GUILLOTINE,   DEFENSE_DOWN1_EFFECT,       120, BUG,           80,  5 ; replaced 'OHKO_EFFECT' with 'DEFENSE_DOWN1_EFFECT'. passou a ser high-crit.
@@ -37,7 +37,7 @@ Moves:
     move GROUND_STOMP, SPEED_DOWN_SIDE_EFFECT,      40, GROUND,       100, 30 ; NEW MOVE - replaced Stomp. também dar ao Dodrio.
     move DOUBLE_KICK,  ATTACK_TWICE_EFFECT,         30, FIGHTING,     100, 20 ; hitmonlee, nidos, kangaskhan.
     move SHADOW_BALL,  ACCURACY_DOWN1_EFFECT,       75, GHOST,        100, 20 ; NEW MOVE - replaced Mega_Kick. Natural: Gengar, Jynx, Ninetales (high level), Hypno (high level), Marowak (high level). high-level move.
-    move DARK_PULSE,   FLINCH_SIDE_EFFECT2,         80, DARK,         100, 15 ; NEW MOVE - replaced Jump_Kick. Natural: Gengar, Hypno, Marowak, Jinx (high level), Alakazam (high level), mewtwo. high-level move.
+    move DARK_PULSE,   FLINCH_SIDE_EFFECT2,         80, DARK,         100, 20 ; NEW MOVE - replaced Jump_Kick. Natural: Gengar, Hypno, Marowak, Jinx (high level), Alakazam (high level), mewtwo. high-level move.
     move ROLLING_KICK, FLINCH_SIDE_EFFECT2,         75, FIGHTING,     100, 25 ; hitmonlee's signature move.
     move SAND_ATTACK,  ACCURACY_DOWN1_EFFECT,       20, GROUND,       100, 20
     move HEADBUTT,     CONFUSION_SIDE_EFFECT,       50, NORMAL,       100, 25
@@ -144,7 +144,7 @@ Moves:
     move SKULL_BASH,   RECOIL_EFFECT,              100, ROCK,         100, 10 ; replaced 'CHARGE_EFFECT' with 'RECOIL_EFFECT'. Kabutops, Omastar, Aerodactyl, Blastoise, Marowak, kangaskhan.
     move ROLLOUT,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, ROCK,          90, 20 ; NEW MOVE - replaced Spike_Cannon. Golem, Sandslash (high level).
     move CONSTRICT,    SPEED_DOWN1_EFFECT,          30, BUG,          100, 30 ; Pinsir, Tangela, Lickitung, Tentacruel, Arbok.
-    move AMNESIA,      SPECIAL_UP2_EFFECT,           0, BIRD,         100, 15 ; snorlax, slowbro.
+    move AMNESIA,      SPECIAL_UP2_EFFECT,           0, BIRD,         100, 15 ; snorlax, slowbro, psyduck, lickitung, mr mime, weezing (high level), poliwrath (high level), wigglytuff (high level), exeggutor (high level), hypno (high level). Remove from Mewtwo.
     move CONFUSE,      SPECIAL_DOWN1_EFFECT,         0, BIRD,         100, 25 ; NEW MOVE - replaced Kinesis.
     move SOFTBOILED,   HEAL_EFFECT,                  0, BIRD,         100, 20 ; chansey.
     move HI_JUMP_KICK, NO_ADDITIONAL_EFFECT,       100, FIGHTING,      90, 20 ; replaced 'JUMP_KICK_EFFECT' with 'NO_ADDITIONAL_EFFECT'. hitmonlee's signature move.
@@ -175,7 +175,7 @@ Moves:
     move TRI_ATTACK,   ACCURACY_UP1_EFFECT,         90, ELECTRIC,     100, 20 ; replaced 'NO_ADDITIONAL_EFFECT' with 'ACCURACY_UP1_EFFECT'. Porygon, Magneton.
     move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 15
     move SLASH,        NO_ADDITIONAL_EFFECT,        70, NORMAL,       100, 20 ; high-crit. stronger scratch.
-    move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, BIRD,         100, 10 ; natural: gengar (high level), mr mime, porygon, electrode, alakazam (high level), jolteon, arbok, muk (high level), weezing (high level), clefable, tangela.
+    move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, BIRD,         100, 10 ; gengar, mr mime, porygon, electrode, alakazam (high level), jolteon (high level), arbok, muk, weezing, clefable, tangela.
     move STRUGGLE,      RECOIL_EFFECT,               40, BIRD,        100, 10 ; Always have Struggle as the last move on the list (due to Metronome's internal workings).
     assert_table_length NUM_ATTACKS
 
