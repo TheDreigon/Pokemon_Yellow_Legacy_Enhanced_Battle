@@ -155,10 +155,10 @@ Psychic (6 moves)  __FIRST REVISION DONE
 Ghost (5 moves)  __FIRST REVISION DONE
     move CONFUSE_RAY,  CONFUSION_EFFECT,             0, GHOST,        100, 20
 	
-    move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,        100, 30
+    move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,        100, 25
 	move OMINOUS_WIND, SPECIAL_DOWN1_EFFECT,        55, GHOST,        100, 20  -- new move
 	move SPIRIT_DRAIN, DRAIN_HP_EFFECT,             65, GHOST,        100, 20  -- new move
-    move SHADOW_BALL,  ACCURACY_DOWN1_EFFECT,       75, GHOST,        100, 20  -- new move
+    move SHADOW_BALL,  ACCURACY_DOWN1_EFFECT,       75, GHOST,        100, 15  -- new move
 
 
 Dark (7 moves)  __FIRST REVISION DONE
@@ -301,7 +301,7 @@ Total: 184 moves (originally 166)
 
 ____________________ - - - - - - - - - - 
 
-- tornar a Power Plant escura, como o Rock Tunnel.
+- talvez tornar a Digglet's Cave escura, como o Rock Tunnel.
 - find how to fix the 'Badge Boost glitch'.
 - find how to make the AI not have infinite PP.
 - make Freeze not infinite.
@@ -523,7 +523,7 @@ Growlithe/Arcanine: Fire -> Fire/Normal
 Farfetch'd: Normal/Flying -> Fighting/Flying
 Seel: Water -> Water/Ice (Dewgong already is Water/Ice)
 Gyarados: Water/Flying -> Water/Dragon
-Porygon: Normal -> Electric/Normal
+Porygon: Normal -> Normal/Electric
 Kangaskhan: Normal -> Normal/Fighting
 Seadra: Water -> Water/Dragon
 Jynx: Ice/Psychic -> Ghost/Ice
@@ -571,7 +571,6 @@ Fighting: Regularly Effective against Dragon -> Super-Effective against Dragon. 
 Fighting: Super-Effective against Normal -> Regularly against Normal. ___DONE _
 
 Psychic: Super-Effective against Poison -> Regularly Effective against Poison. ___DONE _
-Psychic: Super-Effective against Ghost -> Not Very Effective against Ghost. ___DONE _
 Psychic: Regularly Effective against Bug -> Not Very Effective against Bug. ___DONE _
 
 Flying: Regularly Effective against Ice -> Not Very Effective against Ice. ___DONE _
@@ -606,11 +605,10 @@ Dark - original:
 	Immune TO Psychic.
 	
 Dark - revised: 
-	strong VS Psychic, Normal; 
-	not strong VS Fighting, Fairy, Bug, Ghost; 
+	strong VS Psychic, Ghost, Normal; 
+	not strong VS Fighting, Fairy, Bug, Dark;
 	weak TO Fighting, Bug, Fairy, Ghost; 
-	resists Psychic;
-	Immune TO Dark / Does not affect Dark.
+	resists Psychic, Dark.
 	
 	
 Fairy - original: 
@@ -681,7 +679,7 @@ Rhyhorn: level 42 -> level 40
 Horsea: level 35 -> level 30 (good rod)
 Goldeen: level 32 -> level 20 (old rod)
 Magikarp: level 20 -> level 26
-Dragonair: level 55 -> level 45
+Dragonair: level 55 -> level 46
 Omanyte: level 40 -> level 30
 Kabuto: level 40 -> level 30
 
@@ -923,7 +921,8 @@ Fire : - - - - - - - - - - - - - -
 
 Ninetales
 original: 73 76 75 100 100 - 424
-revised : 70 70 70 110 110 - 435
+revised : 90 70 70 100 100 - 435
+* Vulpix also +22HP (38 to 60).
 
 Arcanine
 original: 90  110 80 80 95 - 455
@@ -933,7 +932,7 @@ revised : 100 100 80 90 90 - 460
 Rapidash
 original: 65 100 70 80 105 - 420
 smith   : 65 100 70 80 115 - 430
-revised : 70 95  70 85 110 - 430
+revised : 70 100 70 85 110 - 435
 
 Magmar
 original: 65 95 57 85 93 - 395
@@ -958,7 +957,7 @@ revised : 65 55 45 120 100 - 385
 
 Lapras
 original: 130 85 80 95 60 - 450
-revised : 130 80 90 95 65 - 460
+revised : 140 80 90 95 60 - 465
 
 
 Poison: - - - - - - - - - - - - - -
@@ -996,8 +995,8 @@ revised2: 105 90 105 100 60 - 460
 
 Gengar
 original: 60 65 60 130 110 - 425
-revised : 60 90 45 120 120 - 435
-* Haunter also +5Attack (50 to 55).
+revised : 65 90 45 120 120 - 440
+* Haunter also +10Attack (50 to 60).
 
 
 Flying: - - - - - - - - - - - - - -
@@ -1058,8 +1057,9 @@ revised : 80 85 70 95 90 - 420
 * Psyduck also +5Special (50 to 55), and +5Speed (55 to 60).
 
 Tentacruel
-original: 80 70 65 120 100 - 435
-revised : 90 90 65 110 100 - 455
+original: 80  70 65 120 100 - 435
+revised : 110 90 65 100 95  - 460
+* Tentacool also +15Hp (40 to 55).
 
 Slowbro
 original: 95 75 110 80 30 - 390
@@ -1095,6 +1095,8 @@ revised : 95 130 85 94  81 - 485
 Dragonite
 original: 91  134 95 100 80 - 500
 revised : 100 125 90 110 80 - 505
+ * Dragonair also +24HP (61 to 90), +1Attack (84 to 85), +10Special (70 to 80).
+ * Dratini also +34HP (41 to 80), +1Attack (64 to 65), +10Speed (50 to 60).
 
 
 Psychic: - - - - - - - - - - - - - -
@@ -1105,12 +1107,12 @@ revised : 65 45 45 135 125 - 415
 
 Hypno
 original: 85 73 70 115 67 - 410
-revised : 80 85 70 110 70 - 415
+revised : 75 85 75 110 70 - 415
 
-Mr Mime
+Mr Mime (wide movepool)
 original: 40 45 65 100 90  - 340
 revised : 50 55 60 105 105 - 375
-revised2: 55 50 70 105 105 - 385
+revised2: 55 50 60 105 105 - 375
 
 
 Legendary: - - - - - - - - - - - - - -

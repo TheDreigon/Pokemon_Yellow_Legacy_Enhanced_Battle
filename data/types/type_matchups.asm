@@ -13,7 +13,6 @@ TypeEffects:
 	db ICE,          ICE,          NOT_VERY_EFFECTIVE
 	db GRASS,        GRASS,        NOT_VERY_EFFECTIVE
 	db PSYCHIC_TYPE, PSYCHIC_TYPE, NOT_VERY_EFFECTIVE
-	db PSYCHIC_TYPE, GHOST,        NOT_VERY_EFFECTIVE
 	db PSYCHIC_TYPE, BUG,          NOT_VERY_EFFECTIVE
 	db FIRE,         WATER,        NOT_VERY_EFFECTIVE
 	db GRASS,        FIRE,         NOT_VERY_EFFECTIVE
@@ -114,21 +113,20 @@ TypeEffects:
 	db GAS,          STEEL,        NO_EFFECT
 	; Dark
 	db DARK,         PSYCHIC_TYPE, SUPER_EFFECTIVE
+	db DARK,         GHOST,        SUPER_EFFECTIVE
 	db DARK,         NORMAL,       SUPER_EFFECTIVE
-	db DARK,         GHOST,        NOT_VERY_EFFECTIVE
 	db DARK,         FIGHTING,     NOT_VERY_EFFECTIVE
 	db DARK,         FAIRY,        NOT_VERY_EFFECTIVE
 	db DARK,         BUG,          NOT_VERY_EFFECTIVE
+	db DARK,         DARK,         NOT_VERY_EFFECTIVE
 	db FIGHTING,     DARK,         SUPER_EFFECTIVE
 	db BUG,          DARK,         SUPER_EFFECTIVE
 	db FAIRY,        DARK,         SUPER_EFFECTIVE
 	db GHOST,        DARK,         SUPER_EFFECTIVE
 	db PSYCHIC_TYPE, DARK,         NOT_VERY_EFFECTIVE
-	db DARK,         DARK,         NO_EFFECT
 	; Fairy
 	db FAIRY,        FIGHTING,     SUPER_EFFECTIVE
 	db FAIRY,        DRAGON,       SUPER_EFFECTIVE
-	db FAIRY,        DARK,         SUPER_EFFECTIVE
 	db FAIRY,        FIRE,         NOT_VERY_EFFECTIVE
 	db FAIRY,        POISON,       NOT_VERY_EFFECTIVE
 	db FAIRY,        STEEL,        NOT_VERY_EFFECTIVE
@@ -137,7 +135,6 @@ TypeEffects:
 	db GAS,          FAIRY,        SUPER_EFFECTIVE
 	db FIGHTING,     FAIRY,        NOT_VERY_EFFECTIVE
 	db BUG,          FAIRY,        NOT_VERY_EFFECTIVE
-	db DARK,         FAIRY,        NOT_VERY_EFFECTIVE
 	db GRASS,        FAIRY,        NOT_VERY_EFFECTIVE
 	db DRAGON,       FAIRY,        NO_EFFECT
 	; Gas (new type)
