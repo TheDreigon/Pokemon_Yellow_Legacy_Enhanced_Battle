@@ -3,7 +3,7 @@ ____________________
 REVISED movelist organized by type and damge - includes new moves:
 
 
-Normal (20 moves)  __FIRST REVISION DONE
+Normal (19 moves)  __FIRST REVISION DONE
     move SUPERSONIC,   CONFUSION_EFFECT,             0, NORMAL,        80, 20
 	
 	move POUND,        NO_ADDITIONAL_EFFECT,        30, NORMAL,       100, 35
@@ -28,7 +28,6 @@ Normal (20 moves)  __FIRST REVISION DONE
 
 	move SING,         SLEEP_EFFECT,                 0, NORMAL,        80, 20  -- signature move
     move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,        1, NORMAL,       100, 20  -- signature move
-    move PAY_DAY,      PAY_DAY_EFFECT,              55, NORMAL,       100, 30  -- signature move
     move HYPER_FANG,   DEFENSE_DOWN_SIDE_EFFECT,    75, NORMAL,       100, 20  -- signature move
     move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 15  -- signature move
 
@@ -43,9 +42,9 @@ Fighting (14 moves)  __FIRST REVISION DONE
     move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, FIGHTING,     100, 20
     move TAKE_DOWN,    DEFENSE_DOWN1_EFFECT,        80, FIGHTING,     100, 20
 
-    move ROLLING_KICK, FLINCH_SIDE_EFFECT2,         75, FIGHTING,     100, 25  -- signature move
+    move ROLLING_KICK, FLINCH_SIDE_EFFECT1,         60, FIGHTING,     100, 30  -- signature move
     move HI_JUMP_KICK, NO_ADDITIONAL_EFFECT,       100, FIGHTING,      90, 20  -- signature move
-    move DIZZY_PUNCH,  CONFUSION_SIDE_EFFECT,       75, FIGHTING,     100, 25  -- signature move
+    move DIZZY_PUNCH,  CONFUSION_SIDE_EFFECT,       60, FIGHTING,     100, 30  -- signature move
     move LEEK_STRIKE,  NO_ADDITIONAL_EFFECT,        55, FIGHTING,     100, 30  -- new signature move
     move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        60, FIGHTING,     100, 30  -- signature move
     move SUBMISSION,   ATTACK_DOWN1_EFFECT,         90, FIGHTING,     100, 20  -- signature move
@@ -157,14 +156,14 @@ Ghost (5 moves)  __FIRST REVISION DONE
 	
     move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,        100, 25
 	move OMINOUS_WIND, SPECIAL_DOWN1_EFFECT,        55, GHOST,        100, 20  -- new move
-	move SPIRIT_DRAIN, DRAIN_HP_EFFECT,             65, GHOST,        100, 20  -- new move
+	move SPIRIT_DRAIN, DRAIN_HP_EFFECT,             65, GHOST,        100, 15  -- new move
     move SHADOW_BALL,  ACCURACY_DOWN1_EFFECT,       75, GHOST,        100, 15  -- new move
 
 
 Dark (7 moves)  __FIRST REVISION DONE
     move GLARE,        PARALYZE_EFFECT,              0, DARK,          90, 20
 	
-    move LICK,         PARALYZE_SIDE_EFFECT2,       25, DARK,         100, 30
+    move LICK,         PARALYZE_SIDE_EFFECT2,       20, DARK,         100, 20
 	move PURSUIT,      NO_ADDITIONAL_EFFECT,        45, DARK,         100, 20  -- new move (priority move)
 	move FAINT_ATTACK, SWIFT_EFFECT,                60, DARK,         100, 25  -- new move
 	move NIGHT_SLASH,  NO_ADDITIONAL_EFFECT,        70, DARK,         100, 20  -- new move
@@ -179,27 +178,28 @@ Grass (13 moves)  __FIRST REVISION DONE
     move SLEEP_POWDER, SLEEP_EFFECT,                 0, GRASS,         70, 20
     move LEECH_SEED,   LEECH_SEED_EFFECT,            0, GRASS,        100, 20
 	
-    move ABSORB,       DRAIN_HP_EFFECT,             20, GRASS,        100, 25
+    move ABSORB,       DRAIN_HP_EFFECT,             25, GRASS,        100, 25
     move VINE_WHIP,    NO_ADDITIONAL_EFFECT,        40, GRASS,        100, 30
     move WRAP,         TRAPPING_EFFECT,             16, GRASS,         85, 30
-    move MEGA_DRAIN,   DRAIN_HP_EFFECT,             50, GRASS,        100, 20
+    move MEGA_DRAIN,   DRAIN_HP_EFFECT,             55, GRASS,        100, 20
     move RAZOR_LEAF,   NO_ADDITIONAL_EFFECT,        70, GRASS,        100, 20
-	move GIGA_DRAIN,   DRAIN_HP_EFFECT,             80, GRASS,        100, 15  -- new move
+	move GIGA_DRAIN,   DRAIN_HP_EFFECT,             75, GRASS,        100, 15  -- new move
     move PETAL_DANCE,  THRASH_PETAL_DANCE_EFFECT,  100, GRASS,        100, 10
     move SOLARBEAM,    CHARGE_EFFECT,              120, GRASS,        100, 10
 
-    move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, GRASS,        100, 15  -- signature move
+    move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, GRASS,         90, 15  -- signature move
 
 
-Ground (7 moves)
+Ground (8 moves)  __FIRST REVISION DONE
     move SAND_ATTACK,  ACCURACY_DOWN1_EFFECT,       20, GROUND,       100, 20
-    move GROUND_STOMP, SPEED_DOWN_SIDE_EFFECT,      40, GROUND,       100, 30  -- new move
+    move GROUND_STOMP, SPEED_DOWN_SIDE_EFFECT,      45, GROUND,       100, 30  -- new move
+    move BULLDOZE,     SPEED_DOWN1_EFFECT,          60, GROUND,       100, 25  -- new move
     move DIG,          CHARGE_EFFECT,               75, GROUND,       100, 20
-    move EARTHQUAKE,   SPEED_DOWN_SIDE_EFFECT,      90, GROUND,       100, 15
+    move EARTHQUAKE,   SPEED_DOWN1_EFFECT,          90, GROUND,       100, 15
     move FISSURE,      SPEED_DOWN2_EFFECT,         120, GROUND,        80,  5
 
-    move BONE_CLUB,    NO_ADDITIONAL_EFFECT,        60, GROUND,       100, 30  -- signature move
-    move BONEMERANG,   ATTACK_TWICE_EFFECT,         40, GROUND,       100, 20  -- signature move
+    move BONE_CLUB,    FLINCH_SIDE_EFFECT1,         60, GROUND,       100, 30  -- signature move
+    move BONEMERANG,   ATTACK_TWICE_EFFECT,         50, GROUND,        90, 20  -- signature move
 
 
 Poison (4 moves)
@@ -277,11 +277,11 @@ Bird (47 moves)
 	
 
 Moves count per type:
-	Normal: 20 moves
+	Normal: 19 moves
 	Fighting: 14 moves
 	Flying: 6 moves
 	Poison: 4 moves
-	Ground: 7 moves
+	Ground: 8 moves
 	Rock: 7 moves
 	Bug: 10 moves
 	Ghost: 5 moves
@@ -738,21 +738,21 @@ Bug: - - - - - - - - - - - -
 
 Butterfree
 original: 60 45 50 80 70 - 305
-revised : 60 60 50 95 90 - 355 
+revised : 60 60 55 95 90 - 360 
 
 Beedrill
 original: 65 80 40 45 75 - 305
-revised : 60 95 55 60 95 - 365
+revised : 60 95 55 65 95 - 370
 
 Venomoth
 original: 70 65 60 90 90  - 375
 smith   : 70 75 60 95 100 - 400
-revised : 60 80 70 80 85  - 375
+revised : 60 80 70 85 85  - 380
 
 Parasect
 original: 60 95 80 80 30 - 345
-revised : 95 90 90 80 40 - 400
-* Paras also +10Hp (35 to 45), +5Speed (25 to 30).
+revised : 95 90 90 90 30 - 400
+* Paras also +10Hp (35 to 45), +20Speed (25 to 45).
 
 Scyther
 original: 70 110 80 55 105 - 420
@@ -838,7 +838,7 @@ revised : 140 75 50 70 80 - 415
 
 Raticate
 original: 55 81 60 50 97 - 343
-revised : 65 95 60 56 99 - 375
+revised : 66 94 56 60 99 - 375
 
 Lickitung
 original: 90 55 75 60 30 - 310
@@ -859,7 +859,7 @@ revised : 105 105 80 60 80 - 430
 
 Chansey
 original: 250 5 5 105 50 - 415
-revised : 250 5 5 100 80 - 440
+revised : 250 5 5 100 70 - 430
 
 Persian
 original: 65 70 60 65 115 - 375
@@ -1064,8 +1064,8 @@ revised : 110 90 65 100 95  - 460
 
 Slowbro
 original: 95 75 110 80 30 - 390
-revised : 95 70 110 95 30 - 400
-* Slowpoke also +20Special (40 to 60).
+revised : 95 75 110 90 30 - 400
+* Slowpoke also -5HP (90 to 85), -20Attack (65 to 45), +20Special (40 to 60), +5Speed (15 to 20).
 
 Kingler
 original: 55 130 115 50 75 - 425
