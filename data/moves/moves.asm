@@ -18,23 +18,23 @@ Moves:
     move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, FIGHTING,     100, 20 ; hitmonchan, kangaskhan, machamp on level-up (not machop/machoke), primeape.
     move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        70, FIGHTING,      90, 25 ; slightly weaker comet_punch. hitmonchan, machoke-line, primeape, kangaskhan, etc.
     move GIGA_DRAIN,   DRAIN_HP_EFFECT,             75, GRASS,        100, 15 ; NEW MOVE - replaced Pay_Day. high level. Parasect, Victreebel, Tangela, venusaur.
-    move FIRE_PUNCH,   BURN_SIDE_EFFECT1,           55, FIRE,         100, 25 ; rename to Fang instead of Punch. TODO: Update: Have both fangs and punches.
-    move ICE_PUNCH,    FREEZE_SIDE_EFFECT,          55, ICE,          100, 25 ; rename to Fang instead of Punch. TODO: Update: Have both fangs and punches.
-    move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,       55, ELECTRIC,     100, 25 ; rename to Fang instead of Punch. TODO: Update: Have both fangs and punches.
+    move FIRE_PUNCH,   BURN_SIDE_EFFECT1,           55, FIRE,         100, 25 ; TODO: also add Fang move (if enough pokemon learn it).
+    move ICE_PUNCH,    FREEZE_SIDE_EFFECT,          55, ICE,          100, 25 ; TODO: also add Fang move (if enough pokemon learn it).
+    move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,       55, ELECTRIC,     100, 25 ; pikachu doesn't learn thunderpunch anymore. TODO: also add Fang move (if enough pokemon learn it).
     move SCRATCH,      NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 30 ; pokemon learns either Scratch, Bite, or Tackle.
     move VICEGRIP,     PARALYZE_SIDE_EFFECT1,       75, BUG,          100, 25 ; replaced 'NO_ADDITIONAL_EFFECT' with 'PARALYZE_SIDE_EFFECT1'. pinsir, kingler.
     move GUILLOTINE,   DEFENSE_DOWN1_EFFECT,       120, BUG,           80,  5 ; replaced 'OHKO_EFFECT' with 'DEFENSE_DOWN1_EFFECT'. passou a ser high-crit.
     move LEEK_STRIKE,  NO_ADDITIONAL_EFFECT,        55, FIGHTING,     100, 30 ; NEW MOVE - replaced Razor_Wind. Farfetch'd signature. high crit.
     move SWORDS_DANCE, ATTACK_UP2_EFFECT,            0, BIRD,         100, 20 ; Natural: arcanine, dragonite, farfetch'd, primeape, scyther, persian. Learn: marowak, pinsir, kabutops, sandslash, kingler, hitmons, nidoking (high level), farfetch'd (high level).
     move CUT,          NO_ADDITIONAL_EFFECT,        60, STEEL,        100, 25 ; passou a ser high-crit.
-    move GUST,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 35 ; pokemon learns either peck or gust.
+    move GUST,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 30 ; pokemon learns either peck or gust.
     move WING_ATTACK,  NO_ADDITIONAL_EFFECT,        50, FLYING,       100, 30
     move WHIRLWIND,    SPEED_DOWN1_EFFECT,           0, BIRD,         100, 30 ; replaced 'SWITCH_AND_TELEPORT_EFFECT' with 'SPEED_DOWN1_EFFECT'. pidgeot, fearow, butterfree, farfetch'd, dragonite, aerodactyl.
     move FLY,          FLY_EFFECT,                  75, FLYING,       100, 20
     move BIND,         PARALYZE_SIDE_EFFECT2,       40, ROCK,         100, 30 ; replaced 'NO_ADDITIONAL_EFFECT' with 'PARALYZE_SIDE_EFFECT2'. animação mais lenta/demorada. Onyx, Arbok, Dragonite, Gyarados, Machamp, Kangaskhan.
     move DRAGON_SLAM,  PARALYZE_SIDE_EFFECT2,       90, DRAGON,       100, 15 ; NEW MOVE - replaced Slam. Natural: onyx, dragonite, gyarados.
     move VINE_WHIP,    NO_ADDITIONAL_EFFECT,        40, GRASS,        100, 30 ; bellsprout, bulbasaur, tangela.
-    move GROUND_STOMP, SPEED_DOWN_SIDE_EFFECT,      45, GROUND,       100, 30 ; NEW MOVE - replaced Stomp. também dar ao Dodrio.
+    move GROUND_STOMP, SPEED_DOWN_SIDE_EFFECT,      45, GROUND,       100, 25 ; NEW MOVE - replaced Stomp. também dar ao Dodrio.
     move DOUBLE_KICK,  ATTACK_TWICE_EFFECT,         30, FIGHTING,     100, 20 ; hitmonlee, nidos, kangaskhan.
     move SHADOW_BALL,  ACCURACY_DOWN1_EFFECT,       75, GHOST,        100, 15 ; NEW MOVE - replaced Mega_Kick. Natural: Gengar, Jynx, Ninetales, Marowak (high level).
     move DARK_PULSE,   FLINCH_SIDE_EFFECT2,         80, DARK,         100, 20 ; NEW MOVE - replaced Jump_Kick. Natural: Gengar, Hypno, Marowak, mewtwo.
@@ -62,7 +62,7 @@ Moves:
     move SUPERSONIC,   CONFUSION_EFFECT,             0, NORMAL,        80, 20 ; zubat, magnemite, electabuzz.
     move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,        1, NORMAL,       100, 20 ; voltorb, electabuzz.
     move DISABLE,      DISABLE_EFFECT,               0, BIRD,          75, 15 ; drowzee, mr mime, jynx, clefairy, mewtwo.
-    move ACID,         DEFENSE_DOWN1_EFFECT,        50, POISON,       100, 25 ; replaced 'DEFENSE_DOWN_SIDE_EFFECT' with 'DEFENSE_DOWN1_EFFECT'. grimer (egg move), poison types.
+    move ACID,         DEFENSE_DOWN1_EFFECT,        45, POISON,       100, 25 ; replaced 'DEFENSE_DOWN_SIDE_EFFECT' with 'DEFENSE_DOWN1_EFFECT'. grimer (egg move), poison types.
     move EMBER,        BURN_SIDE_EFFECT1,           40, FIRE,         100, 30
     move FLAMETHROWER, BURN_SIDE_EFFECT2,           90, FIRE,         100, 15 ; replaced 'BURN_SIDE_EFFECT1' with 'BURN_SIDE_EFFECT2'.
     move ICY_MIST,     SPEED_DOWN_SIDE_EFFECT,      40, ICE,          100, 30 ; NEW MOVE - replaced Mist.
@@ -75,7 +75,7 @@ Moves:
     move BUBBLEBEAM,   CONFUSION_SIDE_EFFECT,       55, WATER,        100, 25 ; replaced 'SPEED_DOWN_SIDE_EFFECT' with 'CONFUSION_SIDE_EFFECT'.
     move AURORA_BEAM,  SPECIAL_DOWN_SIDE_EFFECT,    70, ICE,          100, 20 ; replaced 'ATTACK_DOWN_SIDE_EFFECT' with 'SPECIAL_DOWN_SIDE_EFFECT'.
     move HYPER_BEAM,   HYPER_BEAM_EFFECT,          130, DRAGON,        80,  5 ; dragonite, gyarados (high level), mewtwo.
-    move PECK,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 35 ; pokemon learns either peck or gust.
+    move PECK,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 30 ; pokemon learns either peck or gust.
     move DRILL_PECK,   DEFENSE_DOWN1_EFFECT,        90, FLYING,       100, 15 ; replaced 'NO_ADDITIONAL_EFFECT' with 'DEFENSE_DOWN1_EFFECT'.
     move SUBMISSION,   ATTACK_DOWN1_EFFECT,         90, FIGHTING,     100, 20 ; replaced 'RECOIL_EFFECT' with 'ATTACK_DOWN1_EFFECT'. Machamp signature move.
     move LOW_KICK,     FLINCH_SIDE_EFFECT2,         45, FIGHTING,      90, 25 ; machop, mankey, poliwrath.
@@ -135,7 +135,7 @@ Moves:
     move EGG_BOMB,     BURN_SIDE_EFFECT2,           70, FIRE,         100, 15 ; replaced 'NO_ADDITIONAL_EFFECT' with 'BURN_SIDE_EFFECT2'. exeggutor, chansey.
     move LICK,         PARALYZE_SIDE_EFFECT2,       20, DARK,         100, 20 ; lickitung, jynx, haunter, muk, hypno, golbat (not zubat).
     move SMOG,         POISON_SIDE_EFFECT1,         35, GAS,          100, 30 ; koffing, magmar, gastly.
-    move SLUDGE,       POISON_SIDE_EFFECT2,         65, POISON,       100, 20 ; poison types.
+    move SLUDGE,       POISON_SIDE_EFFECT2,         70, POISON,       100, 20 ; poison types.
     move BONE_CLUB,    FLINCH_SIDE_EFFECT1,         60, GROUND,       100, 30
     move FIRE_BLAST,   BURN_SIDE_EFFECT2,          110, FIRE,          80, 10
     move WATERFALL,    FLINCH_SIDE_EFFECT1,         70, WATER,        100, 20 ; replaced 'NO_ADDITIONAL_EFFECT' with 'FLINCH_SIDE_EFFECT1'.
@@ -199,7 +199,7 @@ Ataques adicionados:
     replacements already done above:
         move LEEK_STRIKE,  NO_ADDITIONAL_EFFECT,        55, FIGHTING,     100, 30 ; ADDED - replaced Razor_Wind.
         move DRAGON_SLAM,  PARALYZE_SIDE_EFFECT2,       90, DRAGON,       100, 15 ; ADDED - replace slam.
-        move GROUND_STOMP, SPEED_DOWN_SIDE_EFFECT,      45, GROUND,       100, 30 ; ADDED - replace stomp.
+        move GROUND_STOMP, SPEED_DOWN_SIDE_EFFECT,      45, GROUND,       100, 25 ; ADDED - replace stomp.
         move SHADOW_BALL,  ACCURACY_DOWN1_EFFECT,       75, GHOST,        100, 15 ; ADDED - replace mega_kick.
         move DARK_PULSE,   FLINCH_SIDE_EFFECT2,         80, DARK,         100, 20 ; ADDED - replace jump_kick.
         move ICY_MIST,     SPEED_DOWN_SIDE_EFFECT,      40, ICE,          100, 30 ; ADDED - replace mist.
@@ -241,7 +241,7 @@ Ataques adicionados:
 Ataques a serem adicionados:
     move TOXIC_DRAIN,  DRAIN_HP_EFFECT,             65, POISON,       100, 15 ; natural: muk, golbat, arbok, vileplume, venomoth.
     move SLUDGE_BOMB,  POISON_SIDE_EFFECT2,         90, POISON,       100, 15 ; Natural: muk, weezing, tentacruel, victreebel, vileplume, venusaur."
-    move POISON_JAB,   POISON_SIDE_EFFECT2,         90, POISON,       100, 15 ; Natural: beedril, arbok, nidoking, nodoqueen, golbat, gengar."
+    move POISON_JAB,   POISON_SIDE_EFFECT2,         80, POISON,       100, 15 ; Natural: beedril, arbok, nidoking, nodoqueen, golbat, gengar."
     move POISON_FANG,  POISON_SIDE_EFFECT1,         55, POISON,       100, 25 ; Arbok, Golbat, Nidoking, Nidoqueen, Raticate.
 
 

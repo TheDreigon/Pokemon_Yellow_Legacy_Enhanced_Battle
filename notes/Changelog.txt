@@ -51,8 +51,8 @@ Fighting (14 moves)  __FIRST REVISION DONE
 	
 	
 Flying (6 moves)  __FIRST REVISION DONE
-    move PECK,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 35
-	move GUST,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 35
+    move PECK,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 30
+	move GUST,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 30
     move WING_ATTACK,  NO_ADDITIONAL_EFFECT,        55, FLYING,       100, 25
     move FLY,          FLY_EFFECT,                  75, FLYING,       100, 20
     move DRILL_PECK,   DEFENSE_DOWN1_EFFECT,        90, FLYING,       100, 15
@@ -61,7 +61,7 @@ Flying (6 moves)  __FIRST REVISION DONE
 	
 Fire (6 moves)  __FIRST REVISION DONE
     move EMBER,        BURN_SIDE_EFFECT1,           40, FIRE,         100, 30
-    move FIRE_PUNCH,   BURN_SIDE_EFFECT1,           55, FIRE,         100, 25  -- rename to Fang instead of Punch
+    move FIRE_PUNCH,   BURN_SIDE_EFFECT1,           55, FIRE,         100, 25  -- also add Fang move (if enough pokemon learn it)
     move FIRE_SPIN,    BURN_SIDE_EFFECT1,           70, FIRE,         100, 20  -- rename to 'Flame Charge'.
     move FLAMETHROWER, BURN_SIDE_EFFECT2,           90, FIRE,         100, 15
     move FIRE_BLAST,   BURN_SIDE_EFFECT2,          110, FIRE,          80, 10
@@ -72,7 +72,7 @@ Fire (6 moves)  __FIRST REVISION DONE
 
 Ice (5 moves)  __FIRST REVISION DONE
     move ICY_MIST,     SPEED_DOWN_SIDE_EFFECT,      40, ICE,          100, 30
-    move ICE_PUNCH,    FREEZE_SIDE_EFFECT,          55, ICE,          100, 25  -- rename to Fang instead of Punch
+    move ICE_PUNCH,    FREEZE_SIDE_EFFECT,          55, ICE,          100, 25  -- also add Fang move (if enough pokemon learn it)
     move AURORA_BEAM,  SPECIAL_DOWN_SIDE_EFFECT,    70, ICE,          100, 20
     move ICE_BEAM,     FREEZE_SIDE_EFFECT,          90, ICE,          100, 15
     move BLIZZARD,     FREEZE_SIDE_EFFECT,         110, ICE,           80, 10
@@ -83,7 +83,7 @@ Electric (8 moves)  __FIRST REVISION DONE
 	
     move THUNDERSHOCK, PARALYZE_SIDE_EFFECT1,       40, ELECTRIC,     100, 30
 	move FLASH_ZAP,    NO_ADDITIONAL_EFFECT,        45, ELECTRIC,     100, 20  -- new move (priority move)
-    move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,       55, ELECTRIC,     100, 25  -- rename to Fang instead of Punch
+    move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,       55, ELECTRIC,     100, 25  -- also add Fang move (if enough pokemon learn it)
     move DISCHARGE,    PARALYZE_SIDE_EFFECT1,       70, ELECTRIC,     100, 20  -- new move
     move THUNDERBOLT,  PARALYZE_SIDE_EFFECT2,       90, ELECTRIC,     100, 15
     move THUNDER,      PARALYZE_SIDE_EFFECT2,      110, ELECTRIC,      80, 10
@@ -202,12 +202,16 @@ Ground (8 moves)  __FIRST REVISION DONE
     move BONEMERANG,   ATTACK_TWICE_EFFECT,         50, GROUND,        90, 20  -- signature move
 
 
-Poison (4 moves)
+Poison (4 moves)  __FIRST REVISION DONE
     move TOXIC,        POISON_EFFECT,                0, POISON,       100, 20
 	
     move POISON_STING, POISON_SIDE_EFFECT1,         35, POISON,       100, 30
-    move ACID,         DEFENSE_DOWN1_EFFECT,        50, POISON,       100, 25
-    move SLUDGE,       POISON_SIDE_EFFECT2,         65, POISON,       100, 20
+    move ACID,         DEFENSE_DOWN1_EFFECT,        45, POISON,       100, 25
+    move POISON_FANG,  POISON_SIDE_EFFECT1,         55, POISON,       100, 25 -- new move
+	move TOXIC_DRAIN,  DRAIN_HP_EFFECT,             65, POISON,       100, 15 -- new move
+    move SLUDGE,       POISON_SIDE_EFFECT2,         70, POISON,       100, 20
+    move POISON_JAB,   POISON_SIDE_EFFECT2,         80, POISON,       100, 15 -- new move
+    move SLUDGE_BOMB,  POISON_SIDE_EFFECT2,         90, POISON,       100, 15 -- new move
 
 
 Gas (3 moves)
@@ -719,7 +723,7 @@ revised : 60 55 50 70 90 - 325
 Eevee
 original: 55 55 50 65 55 - 280
 smith   : 70 65 65 70 55 - 325
-revised : 65 65 65 70 60 - 325
+revised : 60 65 65 70 65 - 325
 
 Vaporeon
 original: 130 65 60 110 65 - 430
@@ -851,11 +855,11 @@ revised : 180 120 60 80 20 - 460
 
 Tauros
 original: 75 100 95 70 110 - 450
-revised : 90 120 75 55 110 - 450
+revised : 90 120 75 50 110 - 445
 
 Kangaskhan
 original: 105 95  80 40 90 - 410
-revised : 105 105 80 60 80 - 430
+revised : 115 100 80 60 80 - 435
 
 Chansey
 original: 250 5 5 105 50 - 415
@@ -873,15 +877,15 @@ revised : 50 50 50 50 50 - 250
 Grass: - - - - - - - - - - - - - -
 
 Vileplume
-original: 75  80  85 100 50 - 390
-smith   : 90  80  85 100 50 - 405
-revised : 100 100 85 100 50 - 435
-* Gloom also +10Hp (60 to 70), +10Attack (65 to 75).
+original: 75  80 85 100 50 - 390
+smith   : 90  80 85 100 50 - 405
+revised : 110 90 90 90  45 - 435
+* Gloom also +20Hp (60 to 80), +5Attack (65 to 70).
 
 Victreebell
 original: 80 105 65 100 70 - 420
-revised : 80 110 65 100 80 - 435
-* Weepinbell -5Attack (90 to 85), +10Speed (55 to 65).
+revised : 80 105 65 100 85 - 435
+* Weepinbell +5Speed (55 to 60).
 
 Exeggutor
 original: 95 95 85 125 55 - 455
@@ -1113,7 +1117,7 @@ revised : 75 85 75 110 70 - 415
 Mr Mime (wide movepool)
 original: 40 45 65 100 90  - 340
 revised : 50 55 60 105 105 - 375
-revised2: 55 50 60 105 105 - 375
+revised2: 55 45 65 105 105 - 375
 
 
 Legendary: - - - - - - - - - - - - - -
