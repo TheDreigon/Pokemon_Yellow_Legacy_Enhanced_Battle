@@ -26,7 +26,6 @@ Normal (19 moves)  __FIRST REVISION DONE
 
     move DOUBLE_EDGE,  RECOIL_EFFECT,              100, NORMAL,       100, 10
 
-	move SING,         SLEEP_EFFECT,                 0, NORMAL,        80, 20  -- signature move
     move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,        1, NORMAL,       100, 20  -- signature move
     move HYPER_FANG,   DEFENSE_DOWN_SIDE_EFFECT,    75, NORMAL,       100, 20  -- signature move
     move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 15  -- signature move
@@ -173,9 +172,9 @@ Dark (7 moves)  __FIRST REVISION DONE
 
 
 Grass (13 moves)  __FIRST REVISION DONE
-    move POISONPOWDER, POISON_EFFECT,                0, GRASS,         90, 20
+    move POISONPOWDER, POISON_EFFECT,                0, GRASS,         85, 20
     move STUN_SPORE,   PARALYZE_EFFECT,              0, GRASS,         80, 20
-    move SLEEP_POWDER, SLEEP_EFFECT,                 0, GRASS,         70, 20
+    move SLEEP_POWDER, SLEEP_EFFECT,                 0, GRASS,         75, 20
     move LEECH_SEED,   LEECH_SEED_EFFECT,            0, GRASS,        100, 20
 	
     move ABSORB,       DRAIN_HP_EFFECT,             25, GRASS,        100, 30
@@ -207,22 +206,26 @@ Poison (8 moves)  __FIRST REVISION DONE
 	
     move POISON_STING, POISON_SIDE_EFFECT1,         35, POISON,       100, 30
     move ACID,         DEFENSE_DOWN1_EFFECT,        45, POISON,       100, 25
-    move POISON_FANG,  POISON_SIDE_EFFECT2,         60, POISON,       100, 25 -- new move
-	move TOXIC_DRAIN,  DRAIN_HP_EFFECT,             60, POISON,       100, 20 -- new move
+    move POISON_FANG,  POISON_SIDE_EFFECT2,         60, POISON,       100, 25  -- new move
+	move TOXIC_DRAIN,  DRAIN_HP_EFFECT,             60, POISON,       100, 20  -- new move
     move SLUDGE,       POISON_SIDE_EFFECT1,         65, POISON,       100, 20
-    move POISON_JAB,   POISON_SIDE_EFFECT2,         80, POISON,       100, 15 -- new move
-    move SLUDGE_BOMB,  POISON_SIDE_EFFECT2,         90, POISON,       100, 15 -- new move
+    move POISON_JAB,   POISON_SIDE_EFFECT2,         80, POISON,       100, 15  -- new move
+    move SLUDGE_BOMB,  POISON_SIDE_EFFECT2,         90, POISON,       100, 15  -- new move
 
 
-Gas (3 moves)
-    move POISON_GAS,   POISON_EFFECT,                0, GAS,           80, 20  -- maybe redundant move?
+Gas (5 moves)  __FIRST REVISION DONE
+    move POISON_GAS,   POISON_EFFECT,                0, GAS,           80, 20
 	
     move SMOG,         POISON_SIDE_EFFECT1,         35, GAS,          100, 30
+    move MIST_WHIRL,   ACCURACY_DOWN1_EFFECT,       50, GAS,          100, 25  -- new move
+    move TOXIC_CLOUD,  POISON_SIDE_EFFECT1,         65, GAS,          100, 20  -- new move
     move HAZE,         POISON_SIDE_EFFECT2,         90, GAS,          100, 15  -- maybe replace effect with lower accuracy.
 	
 	
 Fairy (0 moves)
     x
+	
+	move SING,         SLEEP_EFFECT,                 0, FAIRY,        80, 20  -- signature move
 	
 	
 Bird (46 moves)
@@ -297,10 +300,10 @@ Moves count per type:
 	Dragon: 6 moves
 	Dark: 7 moves
 	Steel: 4 moves
-	Gas: 3 moves
+	Gas: 5 moves
 	Fairy: 0 moves
 	Bird: 46 moves
-Total: 187 moves (originally 166) (ideal number under 20)
+Total: 189 moves (originally 166) (ideal number under 200)
 
 ____________________ - - - - - - - - - - 
 
@@ -744,21 +747,21 @@ Bug: - - - - - - - - - - - -
 
 Butterfree
 original: 60 45 50 80 70 - 305
-revised : 60 60 55 95 90 - 360 
+revised : 65 60 55 95 90 - 365 
 
 Beedrill
 original: 65 80 40 45 75 - 305
-revised : 60 95 55 60 95 - 365
+revised : 65 95 55 60 95 - 370
 
 Venomoth
 original: 70 65 60 90 90  - 375
 smith   : 70 75 60 95 100 - 400
-revised : 60 80 65 80 85  - 370
+revised : 65 80 65 80 85  - 375
 
 Parasect
 original: 60 95 80 80 30 - 345
-revised : 95 90 90 90 30 - 400
-* Paras also +10Hp (35 to 45), +20Speed (25 to 45).
+revised : 85 90 90 90 20 - 380
+* Paras also +10Hp (35 to 45), +15Speed (25 to 40).
 
 Scyther
 original: 70 110 80 55 105 - 420

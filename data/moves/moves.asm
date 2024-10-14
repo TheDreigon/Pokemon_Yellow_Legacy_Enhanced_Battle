@@ -88,9 +88,9 @@ Moves:
     move GROWTH,       SPECIAL_UP1_EFFECT,           0, BIRD,         100, 25 ; all grass types.
     move RAZOR_LEAF,   NO_ADDITIONAL_EFFECT,        70, GRASS,        100, 20 ; high-crit. weepinbell, ivysaur.
     move SOLARBEAM,    CHARGE_EFFECT,              120, GRASS,        100, 10 ; Venusaur, Tangela, Exeggutor, Victreebel, Vileplume.
-    move POISONPOWDER, POISON_EFFECT,                0, GRASS,         90, 20 ; butterfree, venomoth, Venusaur, Victreebel, Vileplume.
+    move POISONPOWDER, POISON_EFFECT,                0, GRASS,         85, 20 ; butterfree, venomoth, Venusaur, Victreebel, Vileplume.
     move STUN_SPORE,   PARALYZE_EFFECT,              0, GRASS,         80, 20 ; venomoth, Tangela, Parasect, Vileplume.
-    move SLEEP_POWDER, SLEEP_EFFECT,                 0, GRASS,         70, 20 ; butterfree, venomoth, Venusaur, Parasect (before Spore), Victreebel, Vileplume.
+    move SLEEP_POWDER, SLEEP_EFFECT,                 0, GRASS,         75, 20 ; learned after stun spore. butterfree, venomoth, Venusaur, Parasect (before Spore), Victreebel, Vileplume.
     move PETAL_DANCE,  THRASH_PETAL_DANCE_EFFECT,  100, GRASS,        100, 10 ; venusaur, victreebel, vileplume,
     move STRING_SHOT,  SPEED_DOWN1_EFFECT,           0, BIRD,         100, 30
     move DRAGON_RAGE,  SPECIAL_DAMAGE_EFFECT,        1, DRAGON,       100, 20 ; dragonite, gyarados, charizard.
@@ -115,7 +115,7 @@ Moves:
     move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,        100, 25 ; gastly, ninetails, marowak, jynx.
     move MIMIC,        MIMIC_EFFECT,                 0, BIRD,         100, 20 ; mew, mr mime, eevee, golduck, porygon.
     move SCREECH,      DEFENSE_DOWN2_EFFECT,         0, BIRD,         100, 20 ; onyx, magneton, electabuzz, electrode, persian, arbok, primeape, aerodactyl, golbat, jigglytuff.
-    move BLINK_SHIFT,  EVASION_UP1_EFFECT,           0, BIRD,         100, 20 ; NEW MOVE - replaced/renamed Double_Team. ninetails, gengar, jynx, scyther, jolteon, electrode, alakazam, porygon, diglett.
+    move BLINK_SHIFT,  EVASION_UP1_EFFECT,           0, BIRD,         100, 20 ; NEW MOVE - replaced/renamed Double_Team. ninetails, gengar, jynx, scyther, jolteon, electrode, alakazam, porygon, diglett, dodrio, mewtwo, mew.
     move RECOVER,      HEAL_EFFECT,                  0, BIRD,         100, 15 ; muk, weezing, porygon, alakazam, starmie, clefairy, snorlax, slowpoke, mewtwo, mew.
     move HARDEN,       DEFENSE_UP1_EFFECT,           0, BIRD,         100, 30 ; metapod, kakuna, pinsir, staryu.
     move BULLDOZE,     SPEED_DOWN1_EFFECT,          60, GROUND,       100, 25 ; NEW MOVE - replaced Minimize.
@@ -150,7 +150,7 @@ Moves:
     move HI_JUMP_KICK, NO_ADDITIONAL_EFFECT,       100, FIGHTING,      90, 20 ; replaced 'JUMP_KICK_EFFECT' with 'NO_ADDITIONAL_EFFECT'. hitmonlee's signature move.
     move GLARE,        PARALYZE_EFFECT,              0, DARK,          90, 20 ; TODO: rever os pokemon que aprendem. Natural (after Scary Face): arbok, dragonite, gyarados, gengar, onyx. Learn: tauros, primeape, charizard, electabuzz, magmar, rhydon, nidoking, arcanine, kangaskhan, hypno, golbat.
     move DREAM_EATER,  DREAM_EATER_EFFECT,         100, PSYCHIC_TYPE, 100, 20 ; hypno, gengar, jinx.
-    move POISON_GAS,   POISON_EFFECT,                0, GAS,           80, 20 ; koffing, drowzee, grimer, gastly - early level move.
+    move POISON_GAS,   POISON_EFFECT,                0, GAS,           80, 20 ; koffing, drowzee, grimer, gastly, magmar - early level move.
     move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, GRASS,         90, 15 ; exeggutor, chansey.
     move LEECH_LIFE,   DRAIN_HP_EFFECT,             60, BUG,          100, 20 ; golbat, arbok, parasect, weepinbell, venomoth (high level), butterfree (high level), kabutops (trocar o kabutops aprender mega_drain naturalmente por isto).
     move LOVELY_KISS,  SLEEP_EFFECT,                 0, DARK,          80, 20 ; jynx.
@@ -232,6 +232,8 @@ Ataques adicionados:
         move SLUDGE_BOMB,  POISON_SIDE_EFFECT2,         90, POISON,       100, 15 ; Natural: muk, weezing, victreebel, vileplume, venusaur.
         move POISON_JAB,   POISON_SIDE_EFFECT2,         80, POISON,       100, 15 ; Natural: beedril, arbok, nidoking, nodoqueen, golbat, gengar, tentacruel.
         move POISON_FANG,  POISON_SIDE_EFFECT2,         60, POISON,       100, 25 ; Arbok, Golbat, Nidoking, Nidoqueen, Raticate.
+        move MIST_WHIRL,   ACCURACY_DOWN1_EFFECT,       50, GAS,          100, 25 ; koffing, gastly, tentacool.
+        move TOXIC_CLOUD,  POISON_SIDE_EFFECT1,         65, GAS,          100, 20 ; koffing, gastly.
 
     stats moves - to be added above:
         move CHARM,        ATTACK_DOWN2_EFFECT,          0, BIRD,         100, 20
