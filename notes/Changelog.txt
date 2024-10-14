@@ -36,18 +36,18 @@ Fighting (14 moves)  __FIRST REVISION DONE
     move SEISMIC_TOSS, SPECIAL_DAMAGE_EFFECT,        1, FIGHTING,     100, 25
     move DOUBLE_KICK,  ATTACK_TWICE_EFFECT,         30, FIGHTING,     100, 20
     move LOW_KICK,     FLINCH_SIDE_EFFECT2,         45, FIGHTING,      90, 25
-    move MACH_PUNCH,   NO_ADDITIONAL_EFFECT,        45, FIGHTING,     100, 20  -- new move (priority move)
     move STRENGTH,     ATTACK_UP1_EFFECT,           60, FIGHTING,     100, 30
     move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        70, FIGHTING,      90, 25
     move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, FIGHTING,     100, 20
     move TAKE_DOWN,    DEFENSE_DOWN1_EFFECT,        80, FIGHTING,     100, 20
 
+    move MACH_PUNCH,   NO_ADDITIONAL_EFFECT,        45, FIGHTING,     100, 20  -- new signature move (priority move)
+    move DIZZY_PUNCH,  CONFUSION_SIDE_EFFECT,       60, FIGHTING,     100, 30  -- signature move
     move ROLLING_KICK, FLINCH_SIDE_EFFECT1,         60, FIGHTING,     100, 30  -- signature move
     move HI_JUMP_KICK, NO_ADDITIONAL_EFFECT,       100, FIGHTING,      90, 20  -- signature move
-    move DIZZY_PUNCH,  CONFUSION_SIDE_EFFECT,       60, FIGHTING,     100, 30  -- signature move
-    move LEEK_STRIKE,  NO_ADDITIONAL_EFFECT,        55, FIGHTING,     100, 30  -- new signature move
     move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        60, FIGHTING,     100, 30  -- signature move
     move SUBMISSION,   ATTACK_DOWN1_EFFECT,         90, FIGHTING,     100, 20  -- signature move
+    move LEEK_STRIKE,  NO_ADDITIONAL_EFFECT,        55, FIGHTING,     100, 30  -- new signature move
 	
 	
 Flying (6 moves)  __FIRST REVISION DONE
@@ -95,14 +95,14 @@ Bug (10 moves)  __FIRST REVISION DONE
     move CONSTRICT,    SPEED_DOWN1_EFFECT,          30, BUG,          100, 30
     move BUG_BITE,     FLINCH_SIDE_EFFECT1,         40, BUG,          100, 30  -- new move
     move LEECH_LIFE,   DRAIN_HP_EFFECT,             60, BUG,          100, 20
-	move BUG_BUZZ,     NO_ADDITIONAL_EFFECT,        90, BUG,          100, 15  -- new move
-	move MEGAHORN,     NO_ADDITIONAL_EFFECT,        90, BUG,          100, 15  -- new move
+	move BUG_BUZZ,     DEFENSE_DOWN_SIDE_EFFECT,    90, BUG,          100, 15  -- new move
+	move MEGAHORN,     DEFENSE_DOWN_SIDE_EFFECT,    90, BUG,          100, 15  -- new move
 
     move SPORE,        SLEEP_EFFECT,                 0, BUG,          100, 20  -- signature move
     move VICEGRIP,     PARALYZE_SIDE_EFFECT1,       75, BUG,          100, 25  -- signature move
     move GUILLOTINE,   DEFENSE_DOWN1_EFFECT,       120, BUG,           80,  5  -- signature move
-    move PIN_MISSILE,  TWO_TO_FIVE_ATTACKS_EFFECT,  18, BUG,           90, 20  -- signature move
-    move TWINEEDLE,    TWINEEDLE_EFFECT,            40, BUG,          100, 20  -- signature move
+    move PIN_MISSILE,  TWO_TO_FIVE_ATTACKS_EFFECT,  18, BUG,           90, 20  -- signature move ; maybe remove.
+    move TWINEEDLE,    TWINEEDLE_EFFECT,            45, BUG,          100, 20  -- signature move
 
 
 Rock (7 moves)  __FIRST REVISION DONE
@@ -156,7 +156,7 @@ Ghost (5 moves)  __FIRST REVISION DONE
 	
     move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,        100, 25
 	move OMINOUS_WIND, SPECIAL_DOWN1_EFFECT,        55, GHOST,        100, 20  -- new move
-	move SPIRIT_DRAIN, DRAIN_HP_EFFECT,             65, GHOST,        100, 15  -- new move
+	move SPIRIT_DRAIN, DRAIN_HP_EFFECT,             60, GHOST,        100, 20  -- new move
     move SHADOW_BALL,  ACCURACY_DOWN1_EFFECT,       75, GHOST,        100, 15  -- new move
 
 
@@ -178,12 +178,12 @@ Grass (13 moves)  __FIRST REVISION DONE
     move SLEEP_POWDER, SLEEP_EFFECT,                 0, GRASS,         70, 20
     move LEECH_SEED,   LEECH_SEED_EFFECT,            0, GRASS,        100, 20
 	
-    move ABSORB,       DRAIN_HP_EFFECT,             25, GRASS,        100, 25
+    move ABSORB,       DRAIN_HP_EFFECT,             25, GRASS,        100, 30
     move VINE_WHIP,    NO_ADDITIONAL_EFFECT,        40, GRASS,        100, 30
     move WRAP,         TRAPPING_EFFECT,             16, GRASS,         85, 30
-    move MEGA_DRAIN,   DRAIN_HP_EFFECT,             55, GRASS,        100, 20
+    move MEGA_DRAIN,   DRAIN_HP_EFFECT,             50, GRASS,        100, 25
     move RAZOR_LEAF,   NO_ADDITIONAL_EFFECT,        70, GRASS,        100, 20
-	move GIGA_DRAIN,   DRAIN_HP_EFFECT,             75, GRASS,        100, 15  -- new move
+	move GIGA_DRAIN,   DRAIN_HP_EFFECT,             75, GRASS,        100, 20  -- new move
     move PETAL_DANCE,  THRASH_PETAL_DANCE_EFFECT,  100, GRASS,        100, 10
     move SOLARBEAM,    CHARGE_EFFECT,              120, GRASS,        100, 10
 
@@ -202,14 +202,14 @@ Ground (8 moves)  __FIRST REVISION DONE
     move BONEMERANG,   ATTACK_TWICE_EFFECT,         50, GROUND,        90, 20  -- signature move
 
 
-Poison (4 moves)  __FIRST REVISION DONE
+Poison (8 moves)  __FIRST REVISION DONE
     move TOXIC,        POISON_EFFECT,                0, POISON,       100, 20
 	
     move POISON_STING, POISON_SIDE_EFFECT1,         35, POISON,       100, 30
     move ACID,         DEFENSE_DOWN1_EFFECT,        45, POISON,       100, 25
-    move POISON_FANG,  POISON_SIDE_EFFECT1,         55, POISON,       100, 25 -- new move
-	move TOXIC_DRAIN,  DRAIN_HP_EFFECT,             65, POISON,       100, 15 -- new move
-    move SLUDGE,       POISON_SIDE_EFFECT2,         70, POISON,       100, 20
+    move POISON_FANG,  POISON_SIDE_EFFECT2,         60, POISON,       100, 25 -- new move
+	move TOXIC_DRAIN,  DRAIN_HP_EFFECT,             60, POISON,       100, 20 -- new move
+    move SLUDGE,       POISON_SIDE_EFFECT1,         65, POISON,       100, 20
     move POISON_JAB,   POISON_SIDE_EFFECT2,         80, POISON,       100, 15 -- new move
     move SLUDGE_BOMB,  POISON_SIDE_EFFECT2,         90, POISON,       100, 15 -- new move
 
@@ -218,14 +218,14 @@ Gas (3 moves)
     move POISON_GAS,   POISON_EFFECT,                0, GAS,           80, 20  -- maybe redundant move?
 	
     move SMOG,         POISON_SIDE_EFFECT1,         35, GAS,          100, 30
-    move HAZE,         POISON_SIDE_EFFECT2,         90, GAS,          100, 15
+    move HAZE,         POISON_SIDE_EFFECT2,         90, GAS,          100, 15  -- maybe replace effect with lower accuracy.
 	
 	
 Fairy (0 moves)
     x
 	
 	
-Bird (47 moves)
+Bird (46 moves)
     move GROWL,        ATTACK_DOWN1_EFFECT,          0, BIRD,         100, 30
     move TAIL_WHIP,    DEFENSE_DOWN1_EFFECT,         0, BIRD,         100, 30
     move CONFUSE,      SPECIAL_DOWN1_EFFECT,         0, BIRD,         100, 25
@@ -235,10 +235,11 @@ Bird (47 moves)
     move SMOKESCREEN,  ACCURACY_DOWN1_EFFECT,        0, BIRD,         100, 20
 	
 	move X_X_X_X_X_X,  ATTACK_DOWN2_EFFECT,          0, BIRD,         100, 20  -- new move ('Charm')
+	move X_X_X_X_X_X,  ATTACK_DOWN2_EFFECT,          0, BIRD,         100, 20  -- new move ('Intimidate')
     move SCREECH,      DEFENSE_DOWN2_EFFECT,         0, BIRD,         100, 20
-	move X_X_X_X_X_X,  SPECIAL_DOWN2_EFFECT,         0, BIRD,         100, 15  -- new move ('Fake Tears')
+	move X_X_X_X_X_X,  SPECIAL_DOWN2_EFFECT,         0, BIRD,         100, 15  -- new move ('Fake Tears' (?))
 	move X_X_X_X_X_X,  SPEED_DOWN2_EFFECT,           0, BIRD,         100, 20  -- new move ('Scary Face')
-    move FLASH,        ACCURACY_DOWN2_EFFECT,        0, BIRD,         100, 20
+    move FLASH,        ACCURACY_DOWN2_EFFECT,        0, BIRD,         100, 15
 	
     move ROAR,         ATTACK_UP1_EFFECT,            0, BIRD,         100, 30
     move HARDEN,       DEFENSE_UP1_EFFECT,           0, BIRD,         100, 30
@@ -249,9 +250,7 @@ Bird (47 moves)
     move X_X_X_X_X_X,  SPECIAL_UP1_EFFECT,           0, BIRD,         100, 25  -- new move ('Nasty Plot')
     move X_X_X_X_X_X,  SPEED_UP1_EFFECT,             0, BIRD,         100, 30  -- new move ('Nimble')
     move X_X_X_X_X_X,  SPEED_UP1_EFFECT,             0, BIRD,         100, 30  -- new move ('Rock Polish')
-    move DOUBLE_TEAM,  EVASION_UP1_EFFECT,           0, BIRD,         100, 15
-    move MINIMIZE,     EVASION_UP1_EFFECT,           0, BIRD,         100, 15
-    move TELEPORT,     EVASION_UP1_EFFECT,           0, BIRD,         100, 15
+    move BLINK_SHIFT,  EVASION_UP1_EFFECT,           0, BIRD,         100, 20
 	
 	move SWORDS_DANCE, ATTACK_UP2_EFFECT,            0, BIRD,         100, 20
     move ACID_ARMOR,   DEFENSE_UP2_EFFECT,           0, BIRD,         100, 20
@@ -284,7 +283,7 @@ Moves count per type:
 	Normal: 19 moves
 	Fighting: 14 moves
 	Flying: 6 moves
-	Poison: 4 moves
+	Poison: 8 moves
 	Ground: 8 moves
 	Rock: 7 moves
 	Bug: 10 moves
@@ -300,8 +299,8 @@ Moves count per type:
 	Steel: 4 moves
 	Gas: 3 moves
 	Fairy: 0 moves
-	Bird: 47 moves
-Total: 184 moves (originally 166)
+	Bird: 46 moves
+Total: 187 moves (originally 166) (ideal number under 20)
 
 ____________________ - - - - - - - - - - 
 
@@ -645,25 +644,29 @@ Pokemon evolution methods/levels to change:
 Ivysaur: level 32 -> level 36
 Caterpie/Weedle: level 7 -> level 10
 Metapod/Kakuna: level 10 -> level 15
-Pidgeotto: level 36 -> level 34
+Pidgey: level 18 -> level 15
+Pidgeotto: level 36 -> level 35
 Rattata: level 20 -> level 21
 Ekans: level 22 -> level 21
-Sandshrew: level 22 -> level 25
-Nidoran: level 16 -> level 18
-Nidorino/Nidorina: moonstone -> level 34
-Jigglypuff: moonstone -> level 24
+Sandshrew: level 22 -> level 21
+Nidoran: level 16 -> level 15
+Nidorino/Nidorina: Moonstone -> level 35
+Jigglypuff: Moonstone -> level 24
 Zubat: level 22 -> level 21
+Oddish: level 21 -> level 22
+Gloom: Leafstone -> level 38
 Paras: level 24 -> level 19
 Venonat: level 31 -> level 17
 Diglett: level 28 -> level 33
-Psyduck: level 33 -> level 25
+Psyduck: level 33 -> level 30
 Mankey: level 28 -> level 29
-Vulpix: firestone -> moonstone
 Poliwag: level 25 -> level 20 (old rod)
 Abra: level 16 -> level 26
 Kadabra: trading -> level 42
 Machop: level 28 -> level 26
 Machoke: trading -> level 42
+Bellsprout: level 21 -> level 22
+Weepinbell: Leafstone -> level 38
 Geodude: level 28 -> level 26
 Graveler: trading -> level 42
 Gastly: level 25 -> level 26
@@ -676,7 +679,6 @@ Seel: level 34 -> level 35
 Grimer: level 38 -> level 31
 Drowzee: level 26 -> level 30
 Krabby: level 28 -> level 30 (good rod)
-Exeggcute: leafstone -> level 33
 Cubone: level 28 -> level 25 (pô-lo a ser apanhado a um nível mais baixo. por exemplo, na rota 4, à saída do Mt. Moon)
 Koffing: level 35 -> level 31
 Rhyhorn: level 42 -> level 40
@@ -685,14 +687,14 @@ Goldeen: level 32 -> level 20 (old rod)
 Magikarp: level 20 -> level 26
 Dratini: level 30 -> level 26
 Dragonair: level 55 -> level 46
-Omanyte: level 40 -> level 30
-Kabuto: level 40 -> level 30
+Omanyte: level 40 -> level 36
+Kabuto: level 40 -> level 36
 
 Evolution stones reminder and update:
 
 - Moonstone: (4) Clefairy, Jigglypuff, Nidorino, Nidorina -> (3) Clefairy, Vulpix, Staryu
 - Waterstone: (4) Eevee, Poliwhirl, Shellder, Staryu -> (3) Eevee, Poliwhirl, Shellder
-- Leafstone: (3) Gloom, Weepinbell, Exeggcute -> (3) Gloom, Weepinbell, Exeggcute
+- Leafstone: (3) Gloom, Weepinbell, Exeggcute -> (1) Exeggcute
 - Thunderstone: (2) Eevee, Pikachu -> (2) Eevee, Pikachu
 - Firestone: (3) Eevee, Vulpix, Growlithe -> (2) Eevee, Growlithe
 
@@ -727,7 +729,7 @@ revised : 60 65 65 70 65 - 325
 
 Vaporeon
 original: 130 65 60 110 65 - 430
-revised : 130 65 80 110 65 - 450
+revised : 130 65 65 110 80 - 450
 
 Jolteon
 original: 65 65 60 110 130 - 430
@@ -735,7 +737,7 @@ revised : 65 80 65 110 130 - 450
 
 Flareon
 original: 65 130 60 110 65 - 430
-revised : 65 110 65 130 80 - 450
+revised : 65 110 80 130 65 - 450
 
 
 Bug: - - - - - - - - - - - -
@@ -746,12 +748,12 @@ revised : 60 60 55 95 90 - 360
 
 Beedrill
 original: 65 80 40 45 75 - 305
-revised : 60 95 55 65 95 - 370
+revised : 60 95 55 60 95 - 365
 
 Venomoth
 original: 70 65 60 90 90  - 375
 smith   : 70 75 60 95 100 - 400
-revised : 60 80 70 85 85  - 380
+revised : 60 80 65 80 85  - 370
 
 Parasect
 original: 60 95 80 80 30 - 345
@@ -770,18 +772,18 @@ revised : 80 120 100 60 70 - 430
 Rock: - - - - - - - - - - - -
 
 Onix
-original: 35 45 160 30 70 - 340
-smith   : 75 80 160 65 85 - 465
-revised : 80 90 150 70 50 - 440
+original: 35 45  160 30 70 - 340
+smith   : 75 80  160 65 85 - 465
+revised : 50 100 150 75 50 - 425
 
 Golem
 original: 80 110 130 55 45 - 420
-revised : 90 110 130 50 70 - 450
-* Graveler also +15Hp (55 to 70), +15Speed (35 to 50).
+revised : 80 120 120 55 65 - 440
+* Graveler also +5Hp (55 to 60), +5Attack (95 to 100), -5 Defense(115 to 110), +15Speed (35 to 50).
 
 Rhydon
 original: 105 130 120 45 40 - 440
-revised : 100 120 120 60 60 - 460
+revised : 100 125 115 60 55 - 455
 * Rhyhorn also +10Speed (25 to 35).
 
 Omastar
@@ -832,17 +834,17 @@ Clefable
 original: 95  70 73 85  60 - 383
 smith   : 95  70 73 95  60 - 393
 revised : 100 70 80 110 70 - 430
-* Clefairy also +15Special (60 to 75), +10Speed (35 to 45).
+* Clefairy also +10HP (70 to 80), -3Defense (48 to 45), +15Special (60 to 75), +10Speed (35 to 45).
 
 Wigglytuff
 original: 140 70 45 50 45 - 350
 smith   : 140 70 55 85 45 - 395
-revised : 140 75 50 70 80 - 415
+revised : 130 80 45 75 80 - 410
 * Jigglypuff also -5Hp (115 to 110), +10Defense (20 to 30), +15Special (25 to 40), +35Speed (20 to 55).
 
 Raticate
 original: 55 81 60 50 97 - 343
-revised : 66 94 56 60 99 - 375
+revised : 60 95 60 65 95 - 375
 
 Lickitung
 original: 90 55 75 60 30 - 310
@@ -879,12 +881,12 @@ Grass: - - - - - - - - - - - - - -
 Vileplume
 original: 75  80 85 100 50 - 390
 smith   : 90  80 85 100 50 - 405
-revised : 110 90 90 90  45 - 435
+revised : 110 90 90 95  45 - 440
 * Gloom also +20Hp (60 to 80), +5Attack (65 to 70).
 
 Victreebell
 original: 80 105 65 100 70 - 420
-revised : 80 105 65 100 85 - 435
+revised : 85 105 65 100 85 - 440
 * Weepinbell +5Speed (55 to 60).
 
 Exeggutor
@@ -1000,7 +1002,7 @@ revised2: 105 90 105 100 60 - 460
 
 Gengar
 original: 60 65 60 130 110 - 425
-revised : 65 90 45 120 120 - 440
+revised : 60 90 60 120 120 - 450
 * Haunter also +10Attack (50 to 60).
 
 
@@ -1112,7 +1114,7 @@ revised : 65 45 45 135 125 - 415
 
 Hypno
 original: 85 73 70 115 67 - 410
-revised : 75 85 75 110 70 - 415
+revised : 80 85 70 110 70 - 415
 
 Mr Mime (wide movepool)
 original: 40 45 65 100 90  - 340
